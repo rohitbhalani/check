@@ -1,0 +1,122 @@
+<?php $__env->startSection('Title', 'Job Detail'); ?>
+
+<?php $__env->startSection('content'); ?>
+ 
+<?php echo Form::hidden('JobModel', json_encode($UserModel),$attributes = array('id'=>'UserModel')); ?>
+  
+  <div class="row" data-bind="with:UserDetailModel">
+        <div class="col-md-12">
+            <div class="subTitle">Mula Details</div>
+            <div class="panel panel-default userdetailsprofile">
+                <div class="panel-body">
+                    <div class="col-md-6 table-responsive">
+                        <table class="table table-striped ">
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Name </label> </td>
+                                <td data-bind="text:FirstName()+' '+ LastName()">  </td>
+                            </tr>
+                            
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Email </label> </td>
+                                <td data-bind="text:Email"> </td>
+                            </tr>
+                            
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Address </label> </td>
+                                <td data-bind="text:AddressDetail">  </td>
+                            </tr>
+
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Zip </label> </td>
+                                <td data-bind="text:ZipCode">  </td>
+                            </tr>
+
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Phone </label> </td>
+                                <td data-bind="text:Phone">  </td>
+                            </tr>
+
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Ratings </label> </td>
+
+                                <td>
+
+                                    <input id="input-id"  type="number"  data-bind="ApplyRating:RatingValue(),ratingOptions:{'disabled':true,'size':'xs'}"/> <?php /*
+                                 <div class="starRating">
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <input type="radio" value="1" name="rating1" id="rating1">
+                                                                <label for="rating1"><span>1</span></label>
+                                                            </div>
+                                                            <input type="radio" value="2" name="rating1" id="rating2">
+                                                            <label for="rating2"><span>2</span></label>
+                                                        </div>
+                                                        <input type="radio" value="3" name="rating1" id="rating3">
+                                                        <label for="rating3"><span>3</span></label>
+                                                    </div>
+                                                    <input type="radio" value="4" name="rating1" id="rating4">
+                                                    <label for="rating4"><span>4</span></label>
+                                                </div>
+                                                <input type="radio" value="5" name="rating1" id="rating5">
+                                                <label for="rating5"><span>5</span></label>
+                                            </div> */ ?> </td>
+                            </tr>
+                            
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Role Type </label> </td>
+                                <td data-bind="text:RoleType">  </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="col-md-6 table-responsive">
+                        <table class="table table-striped ">
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Services </label> </td>
+                                <td data-bind="text:ServiceName">  </td>
+                            </tr>
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Category Names </label> </td>
+                                <td data-bind="text:CategoryNames">  </td>
+                            </tr>
+
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Avaibility Times </label> </td>
+                                <td data-bind="text:AvaibilityTime">  </td>
+                            </tr>
+
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Mile Status </label> </td>
+                                <td data-bind="text:Miles">  </td>
+                            </tr>
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Transportation Types </label> </td>
+                                <td data-bind="text:TransportationTypes">  </td>
+                            </tr>
+                            
+                            <tr>
+                                <td width="40%"> <label class="control-label"> Operation Days </label> </td>
+                                <td data-bind="text:OperationDays">  </td>
+                            </tr>
+                            
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        </div>
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/star-rating.js');?>"></script>
+<script src="<?php echo asset('/assets/js/pagejs/user/userdetail.js');?>"></script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

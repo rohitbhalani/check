@@ -1,0 +1,91 @@
+<?php $__env->startSection('Title', 'Category List'); ?>
+<?php $__env->startSection('content'); ?>
+ 
+<div class="row">
+
+    <div class="col-md-12">
+    	<div class="subTitle row">Category List
+    	<a class="pull-right"  href="<?php echo URL::to('/').'/admin/addcategory'; ?>">+ Add Category</a></div>
+		<div class="row">
+			<div>
+	            <div style="margin-bottom:0" class="panel panel-default" data-bind="with:SearchModel">
+	                <div class="panel-heading">
+	                    <input type="text" class="input input-sm" name="SearchParam" placeholder="Search Term" data-bind="value:SearchParam"> <button type="button" class="btn btn-info btn-sm" data-bind="click:$root.pager.search">Search</button>
+	                </div>
+	            </div>
+	        </div>
+			<div style="display: none" data-bind="visible:CategoryListArray().length>0">
+				<table class="table table-responsive table-striped table-hover">
+					<thead>
+						<tr>
+							<th>Category</th>
+							<th>Service</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody data-bind="foreach:CategoryListArray">
+						<tr>
+							<td><span data-bind="text:$data.CategoryName"></span></td>
+							<td><span data-bind="text:$data.ServiceName"></span></td>
+							<td><a type="button" class="text text-info" data-bind="attr:{'href':'addcategory/'+$data.EncryptedCategoryID()}"><i class="fa fa-edit"></i> Edit</a> | <a class="text text-danger" data-bind="click:$root.setPopupOptions"><i class="fa fa-times"></i> Remove</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<section id="paginations">
+		<label class="NoRecordsFound" data-bind="visible: $data.CategoryListArray().length == 0">No Records Found</label>
+		<div class="" data-bind="with:pager, visible: $data.CategoryListArray().length > 0">
+		
+			<label style="padding-top:25px" data-bind="text:FirstItemIndex()"></label>-<label data-bind="text:LastItemIndex()"></label> of <label data-bind="text:iTotalRecords()"></label> Records
+			
+			<ul class="pagination pull-right"  data-bind="if:allPages().length > 0">
+				<li data-bind="css:{'disabled':currentPage()== 1} "><a title="Previous" data-bind="click: previousPage"><i class="glyphicon glyphicon-backward"></i></a></li>
+				<!-- ko foreach: $data.pagesToShow() -->
+				<li class="active" data-bind="css: { active: $data.pageNumber == $parent.currentPage() }">
+				<a data-bind="attr: {title:$data.pageNumber},text: $data.pageNumber, click: $parent.gotoPage,attr:{disabled:$data.pageNumber === $parent.currentPage()}"></a></li>
+				<!-- /ko -->
+				<li data-bind="css:{'disabled':currentPage() == allPages().length}">
+				<a title="Next" data-bind="click: nextPage"><i class="glyphicon glyphicon-forward"></i></a></li>
+			</ul>
+			
+		</div>
+	</section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/pagejs/admin/category/list.js');?>"></script>
+<script src="<?php echo asset('/assets/js/pagejs/pager.js');?>"></script>
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.adminmaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

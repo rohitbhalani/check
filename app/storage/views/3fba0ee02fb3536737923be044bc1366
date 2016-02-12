@@ -1,0 +1,115 @@
+<?php $__env->startSection('Title', 'Add Sub Category'); ?>
+
+<?php $__env->startSection('content'); ?>
+ 	<?php echo Form::hidden('SubCategoryModel', json_encode($SubCategoryModel),$attributes = array('id'=>'SubCategoryModel')); ?>
+		 <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading" data-bind="with:SubCategoryModel">
+                        <h3 class="panel-title" data-bind="text:SubCategoryID()>0?'Update Sub Category':'Add Sub Category'"></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <form role="form"  id="subcategoryform" class="form-horizontal" data-bind="with:SubCategoryModel">
+                                <div class="col-md-12 no-padding">
+									<div class="col-md-12">
+									 <div class="validationMsg"></div>
+									  </div>
+
+                                
+                                    <!--<div class="col-md-12">
+                                        <h4 class="big-heading head-border">Add/Update Sub Category</h4>
+                                    </div>-->
+
+                                     <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Select Service</label>
+                                                <div class="col-md-8">
+                                                    <select data-bind="options: $root.Services, optionsValue: 'ServiceID', optionsText: 'ServiceName',value: ServiceID, optionsCaption:'Select',decorateErrorElement:ServiceID,event: { change: $root.ServiceSelectionChanged }"  name="ServiceID" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Select Category</label>
+                                                <div class="col-md-8">
+                                                    <select data-bind="options: $root.Categories, optionsValue: 'CategoryID', optionsText: 'CategoryName',value: CategoryID, optionsCaption:'Select',decorateErrorElement:CategoryID"  name="CategoryID" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                      </div>
+
+
+										<div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Sub Category Name</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" maxlength="100"  name="SubCategoryName"   placeholder="Sub Category Name" data-bind="value:SubCategoryName,decorateErrorElement:SubCategoryName">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Weight</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" maxlength="100"  name="Weight"   placeholder="Weight" data-bind="value:Weight,decorateErrorElement:Weight">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Measurement</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" maxlength="100"  name="Measurement"   placeholder="Measurement" data-bind="value:Measurement,decorateErrorElement:Measurement">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                         <div class="form-group">
+                            <!-- Button -->
+                            <div class="col-md-offset-4 col-md-9">
+                                <button id="btn-signup" type="button" class="btn btn-info" data-bind="click:$root.Save">Save</button>
+                                <a href="<?php echo URL::to('/').'/admin/getsubcategorylist'; ?>" id="btn-signup"  class="btn btn-dark">Cancel</a>
+                            </div>
+                        </div>	
+
+
+                                </div>
+
+                            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/pagejs/admin/subcategory/add.js');?>"></script>
+
+
+<script type="text/javascript">
+	
+	 //window.Required_JobName ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Job Name')); ?>";
+	 window.Required_Service ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Service')); ?>";
+	 window.Required_Category ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Category')); ?>";
+	 window.Required_SubCategoryName ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Sub Category Name')); ?>";
+	 window.Required_Weight ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Weight')); ?>";
+	 window.Required_Measurement ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Measurement')); ?>";
+	 
+	
+  </script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.adminmaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

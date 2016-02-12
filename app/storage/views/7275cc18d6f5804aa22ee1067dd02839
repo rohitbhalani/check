@@ -1,0 +1,105 @@
+<?php $__env->startSection('Title', 'Create User'); ?>
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/Assets/js/pagejs/User/CreateUser.js');?>"></script>
+<?php $__env->stopSection(); ?>
+
+<!--<?php $__env->startSection('sidebar'); ?>
+    @parent
+
+    <p>This is appended to the master sidebar.</p>
+<?php $__env->stopSection(); ?>-->
+
+<?php $__env->startSection('content'); ?>
+ <div class="row">
+            <div class="col-md-3 margin-top-50">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="subTitle">Job List</div>
+
+                <div class="jobCard">
+                    <div>
+                        <a href="#" class="title">Home Appliances - 1755 </a>
+                    </div>
+
+                    <div class="stats">
+                        <span class="bold">Quantity: 5</span>
+                        <span class="bold">|  Items Value : $500</span>
+                        <span class="bold">|  Delivery Date : mm/dd/yy</span>
+                    </div>
+
+                    <div class="desc collapsed descFull">
+                        We're looking to find a team (not an individual) of awesome people, who take pride in their work and have over 1000 
+                        hours of iOS expertise in UI and coding to develop iOS apps. It's important to know that we ...
+                        <br />
+                    </div>
+
+                    <div class="prof">
+                        <div class="left padtop">
+                            <span class="midgrey">Category:</span> <span title="Home Appliances">Home Appliances</span>
+                            <button class="button-viewmore button-gold">View More</button>
+                        </div>
+
+                        <br class="clear">
+                    </div>
+                </div>
+
+                <div class="jobCard">
+                    <div>
+                        <a href="#" class="title">Auto Parts - 1245 </a>
+                    </div>
+
+                    <div class="stats">
+                        <span class="bold">Quantity: 7</span>
+                        <span class="bold">|  Items Value : $800</span>
+                        <span class="bold">|  Delivery Date : mm/dd/yy</span>
+                    </div>
+
+                    <div class="desc collapsed descFull">
+                        We're looking to find a team (not an individual) of awesome people, who take pride in their work and have over 1000 
+                        hours of iOS expertise in UI and coding to develop iOS apps. It's important to know that we ...
+                        <br />
+                    </div>
+
+                    <div class="prof">
+                        <div class="left padtop"><span class="midgrey">Category:</span> <span title="Auto Parts">Auto Parts</span>
+                            <button class="button-viewmore button-gold">View More</button>
+                        </div>
+                        <br class="clear">
+                    </div>
+                </div>
+
+                <div class="jobCard">
+                    <div>
+                        <a href="#" class="title">Clothing & Apparel - 0245 </a>
+                    </div>
+
+                    <div class="stats">
+                        <span class="bold">Quantity: 2</span>
+                        <span class="bold">|  Items Value : $300</span>
+                        <span class="bold">|  Delivery Date : mm/dd/yy</span>
+                    </div>
+
+                    <div class="desc collapsed descFull">
+                        We're looking to find a team (not an individual) of awesome people, who take pride in their work and have over 1000 
+                        hours of iOS expertise in UI and coding to develop iOS apps. It's important to know that we ...
+                        <br />
+                    </div>
+
+                    <div class="prof">
+                        <div class="left padtop"><span class="midgrey">Category:</span> <span title="Clothing Apparel">Clothing Apparel</span>
+                            <button class="button-viewmore button-gold">View More</button>
+                        </div>
+                        <br class="clear">
+                    </div>
+                </div>
+            </div>
+        </div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,456 @@
+[2015-10-08 11:17:54] production.INFO: Time Of Error:Thu,8 Oct 11:17:54 IST [] []
+[2015-10-08 11:17:54] production.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php:37
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php(37): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'C:\\wamp\\www\\Mar...', 37, Array)
+#1 [internal function]: AdminController->postUserList()
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5799): Illuminate\Routing\Controller->callAction('postUserList', Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5787): Illuminate\Routing\ControllerDispatcher->call(Object(AdminController), Object(Illuminate\Routing\Route), 'postUserList')
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4986): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AdminController', 'postUserList')
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5345): call_user_func_array(Object(Closure), Array)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5011): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2015-10-08 11:17:56] production.INFO: Time Of Error:Thu,8 Oct 11:17:56 IST [] []
+[2015-10-08 11:17:56] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 11:18:05] production.INFO: Time Of Error:Thu,8 Oct 11:18:05 IST [] []
+[2015-10-08 11:18:05] production.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php:37
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php(37): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'C:\\wamp\\www\\Mar...', 37, Array)
+#1 [internal function]: AdminController->postUserList()
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5799): Illuminate\Routing\Controller->callAction('postUserList', Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5787): Illuminate\Routing\ControllerDispatcher->call(Object(AdminController), Object(Illuminate\Routing\Route), 'postUserList')
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4986): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AdminController', 'postUserList')
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5345): call_user_func_array(Object(Closure), Array)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5011): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2015-10-08 11:18:06] production.INFO: Time Of Error:Thu,8 Oct 11:18:06 IST [] []
+[2015-10-08 11:18:06] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 11:18:08] production.INFO: Time Of Error:Thu,8 Oct 11:18:08 IST [] []
+[2015-10-08 11:18:08] production.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\SecurityDataProvider.php:583
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\SecurityDataProvider.php(583): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'C:\\wamp\\www\\Mar...', 583, Array)
+#1 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\SecurityController.php(74): DataProviders\SecurityDataProvider->WebLogout(NULL)
+#2 [internal function]: SecurityController->getLogout()
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5799): Illuminate\Routing\Controller->callAction('getlogout', Array)
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5787): Illuminate\Routing\ControllerDispatcher->call(Object(SecurityController), Object(Illuminate\Routing\Route), 'getlogout')
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4986): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'SecurityControl...', 'getlogout')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5345): call_user_func_array(Object(Closure), Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5011): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2015-10-08 11:18:32] production.INFO: Time Of Error:Thu,8 Oct 11:18:32 IST [] []
+[2015-10-08 11:18:32] production.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php:37
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php(37): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'C:\\wamp\\www\\Mar...', 37, Array)
+#1 [internal function]: AdminController->postUserList()
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5799): Illuminate\Routing\Controller->callAction('postUserList', Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5787): Illuminate\Routing\ControllerDispatcher->call(Object(AdminController), Object(Illuminate\Routing\Route), 'postUserList')
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4986): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AdminController', 'postUserList')
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5345): call_user_func_array(Object(Closure), Array)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5011): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2015-10-08 11:18:34] production.INFO: Time Of Error:Thu,8 Oct 11:18:34 IST [] []
+[2015-10-08 11:18:34] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 11:58:05] production.INFO: Time Of Error:Thu,8 Oct 11:58:05 IST [] []
+[2015-10-08 11:58:05] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 12:01:40] production.INFO: Time Of Error:Thu,8 Oct 12:01:40 IST [] []
+[2015-10-08 12:01:40] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 12:03:45] production.INFO: Time Of Error:Thu,8 Oct 12:03:45 IST [] []
+[2015-10-08 12:03:45] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 14:59:28] production.INFO: Time Of Error:Thu,8 Oct 14:59:28 IST [] []
+[2015-10-08 14:59:28] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 16:02:08] production.INFO: Time Of Error:Thu,8 Oct 16:02:08 IST [] []
+[2015-10-08 16:02:08] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 16:02:17] production.INFO: Time Of Error:Thu,8 Oct 16:02:17 IST [] []
+[2015-10-08 16:02:17] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 16:03:16] production.INFO: Time Of Error:Thu,8 Oct 16:03:16 IST [] []
+[2015-10-08 16:03:16] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5727
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5722): Illuminate\Routing\RouteCollection->methodNotAllowed(Array)
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5700): Illuminate\Routing\RouteCollection->getOtherMethodsRoute(Object(Illuminate\Http\Request), Array)
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#10 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#11 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2015-10-08 17:43:05] production.INFO: Time Of Error:Thu,8 Oct 17:43:05 IST [] []
+[2015-10-08 17:43:05] production.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'xx' in 'where clause'' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Database\Connection.php:299
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Database\Connection.php(299): PDO->prepare('SELECT Count(*)...')
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Database\Connection.php(617): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'SELECT Count(*)...', Array)
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Database\Connection.php(581): Illuminate\Database\Connection->runQueryCallback('SELECT Count(*)...', Array, Object(Closure))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Database\Connection.php(304): Illuminate\Database\Connection->run('SELECT Count(*)...', Array, Object(Closure))
+#4 [internal function]: Illuminate\Database\Connection->select('SELECT Count(*)...')
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7613): call_user_func_array(Array, Array)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(3243): Illuminate\Database\DatabaseManager->__call('select', Array)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(3243): Illuminate\Database\DatabaseManager->select('SELECT Count(*)...')
+#8 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\BaseDataProvider.php(271): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\BaseDataProvider.php(271): Illuminate\Support\Facades\DB::select('SELECT Count(*)...')
+#10 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php(108): DataProviders\BaseDataProvider->GetEntityWithPaging(Object(vwUserListEntity), '', 1, 15, 'ModifiedDate', 'desc', ''1'='1'  AND Pl...')
+#11 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php(37): DataProviders\AdminDataProvider->getUserList(Object(stdClass), 1)
+#12 [internal function]: AdminController->postUserList()
+#13 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#14 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5799): Illuminate\Routing\Controller->callAction('postUserList', Array)
+#15 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5787): Illuminate\Routing\ControllerDispatcher->call(Object(AdminController), Object(Illuminate\Routing\Route), 'postUserList')
+#16 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4986): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AdminController', 'postUserList')
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5345): call_user_func_array(Object(Closure), Array)
+#19 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5011): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#21 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#24 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#25 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#26 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#27 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#28 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#29 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'xx' in 'where clause' (SQL: SELECT Count(*) as TotalItems FROM vw_userlist WHERE ('1'='1'  AND PlanName like xx) ORDER BY ModifiedDate desc)' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Database\Connection.php:625
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Database\Connection.php(581): Illuminate\Database\Connection->runQueryCallback('SELECT Count(*)...', Array, Object(Closure))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Database\Connection.php(304): Illuminate\Database\Connection->run('SELECT Count(*)...', Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select('SELECT Count(*)...')
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7613): call_user_func_array(Array, Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(3243): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(3243): Illuminate\Database\DatabaseManager->select('SELECT Count(*)...')
+#6 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\BaseDataProvider.php(271): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\BaseDataProvider.php(271): Illuminate\Support\Facades\DB::select('SELECT Count(*)...')
+#8 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php(108): DataProviders\BaseDataProvider->GetEntityWithPaging(Object(vwUserListEntity), '', 1, 15, 'ModifiedDate', 'desc', ''1'='1'  AND Pl...')
+#9 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php(37): DataProviders\AdminDataProvider->getUserList(Object(stdClass), 1)
+#10 [internal function]: AdminController->postUserList()
+#11 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#12 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5799): Illuminate\Routing\Controller->callAction('postUserList', Array)
+#13 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5787): Illuminate\Routing\ControllerDispatcher->call(Object(AdminController), Object(Illuminate\Routing\Route), 'postUserList')
+#14 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4986): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AdminController', 'postUserList')
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#16 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5345): call_user_func_array(Object(Closure), Array)
+#17 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5011): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#19 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#20 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#21 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#22 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#23 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#24 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#25 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2015-10-08 17:43:07] production.INFO: Time Of Error:Thu,8 Oct 17:43:07 IST [] []
+[2015-10-08 17:43:07] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 17:54:43] production.INFO: Time Of Error:Thu,8 Oct 17:54:43 IST [] []
+[2015-10-08 17:54:43] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ';'' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php:622
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-08 17:54:44] production.INFO: Time Of Error:Thu,8 Oct 17:54:44 IST [] []
+[2015-10-08 17:54:44] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 17:54:52] production.INFO: Time Of Error:Thu,8 Oct 17:54:52 IST [] []
+[2015-10-08 17:54:52] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function DataProviders\GetDataWithTrim()' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php:622
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-08 17:54:53] production.INFO: Time Of Error:Thu,8 Oct 17:54:53 IST [] []
+[2015-10-08 17:54:53] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 17:55:07] production.INFO: Time Of Error:Thu,8 Oct 17:55:07 IST [] []
+[2015-10-08 17:55:07] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function DataProviders\GetDataWithTrim()' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php:622
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-08 17:55:08] production.INFO: Time Of Error:Thu,8 Oct 17:55:08 IST [] []
+[2015-10-08 17:55:08] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 17:59:50] production.INFO: Time Of Error:Thu,8 Oct 17:59:50 IST [] []
+[2015-10-08 17:59:50] production.ERROR: exception 'ErrorException' with message 'Use of undefined constant planName - assumed 'planName'' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php:715
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php(715): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'C:\\wamp\\www\\Mar...', 715, Array)
+#1 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php(251): DataProviders\AdminDataProvider->SavePayment(Object(stdClass))
+#2 [internal function]: AdminController->postSavePayment()
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5799): Illuminate\Routing\Controller->callAction('postSavePayment', Array)
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5787): Illuminate\Routing\ControllerDispatcher->call(Object(AdminController), Object(Illuminate\Routing\Route), 'postSavePayment')
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4986): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AdminController', 'postSavePayment')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5345): call_user_func_array(Object(Closure), Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5011): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2015-10-08 17:59:52] production.INFO: Time Of Error:Thu,8 Oct 17:59:52 IST [] []
+[2015-10-08 17:59:52] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-08 18:41:32] production.INFO: Time Of Error:Thu,8 Oct 18:41:32 IST [] []
+[2015-10-08 18:41:32] production.ERROR: exception 'ErrorException' with message 'Undefined property: stdClass::$RoleID' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php:207
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AdminDataProvider.php(207): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'C:\\wamp\\www\\Mar...', 207, Array)
+#1 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AdminController.php(69): DataProviders\AdminDataProvider->SaveUser(Object(stdClass), 1)
+#2 [internal function]: AdminController->postSaveUser()
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5799): Illuminate\Routing\Controller->callAction('postSaveUser', Array)
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5787): Illuminate\Routing\ControllerDispatcher->call(Object(AdminController), Object(Illuminate\Routing\Route), 'postSaveUser')
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4986): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AdminController', 'postSaveUser')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5345): call_user_func_array(Object(Closure), Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5011): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2015-10-08 18:41:33] production.INFO: Time Of Error:Thu,8 Oct 18:41:33 IST [] []
+[2015-10-08 18:41:33] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []

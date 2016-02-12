@@ -1,0 +1,59 @@
+<?php $__env->startSection('title', 'Signup'); ?>
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/Assets/js/pagejs/User/SignUp.js');?>"></script>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<form data-bind="with:$data.Usersobj()" id="frmUsers" method="POST" class="validate-inline">
+		 <h3 class="form-title">Signup</h3>
+		 <div class="form-group">
+			<?php echo Form::label('FirstName', 'First Name', array('class' => 'control-label')); ?>
+			<div >
+				 <?php echo Form::text("FirstName", $value = null, $attributes = array('data-bind'=>'value:$data.FirstName', 'class'=>'form-control placeholder-no-fix')); ?>
+			</div>
+		 </div>
+		 <div class="form-group">
+			<?php echo Form::label('LastName', 'Last Name', array('class' => 'control-label')); ?>
+			<div >
+				 <?php echo Form::text("LastName", $value = null, $attributes = array('data-bind'=>'value:$data.LastName', 'class'=>'form-control placeholder-no-fix')); ?>
+			</div>
+		 </div>
+		 <div class="form-group">
+			<?php echo Form::label('MiddleName', 'Middle Name', array('class' => 'control-label')); ?>
+			<div >
+				 <?php echo Form::text("MiddleName", $value = null, $attributes = array('data-bind'=>'value:$data.MiddleName', 'class'=>'form-control placeholder-no-fix')); ?>
+			</div>
+		 </div>
+		 <div class="form-group">
+			<?php echo Form::label('Phone', 'Phone', array('class' => 'control-label')); ?>
+			<div >
+				 <?php echo Form::text("LastName", $value = null, $attributes = array('data-bind'=>'value:$data.Phone', 'class'=>'form-control placeholder-no-fix')); ?>
+			</div>
+		 </div>
+		 <div class="form-group">
+			<?php echo Form::label('Email', 'Email', array('class' => 'control-label')); ?>
+			<div >
+				<?php echo Form::text("Email", $value = null, $attributes = array('data-bind'=>'value:$data.Email', 'class'=>'form-control placeholder-no-fix')); ?>
+			</div>
+		 </div>
+		 <div class="form-group">
+			<?php echo Form::label('Password', 'Password', array('class' => 'control-label')); ?>
+			<div >
+				<input type="password" name="Password" data-bind ="value:$data.Password" class ="form-control placeholder-no-fix" />
+			</div>
+		 </div>
+		 <div class="form-group">
+			<?php echo Form::label('ConfirmPassword', 'Confirm Password', array('class' => 'control-label')); ?>
+			<div >
+				<input type="password" name="ConfirmPassword" data-bind ="value:$data.ConfirmPassword" class ="form-control placeholder-no-fix" />
+			</div>
+		 </div>
+		 <div class="form-group">
+			<button type="button" class="btn green" id="saveButton" data-bind="click:$parent.SaveUser">Save <i class="m-icon-swapright m-icon-white"></i></button>
+			<br>
+			<a class="pull-right" href="<?php echo URL::to('/').'/security/login';?>" id="register-btn">Login</a>
+		 </div>
+	</form>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

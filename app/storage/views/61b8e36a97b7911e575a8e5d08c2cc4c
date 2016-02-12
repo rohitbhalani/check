@@ -1,0 +1,164 @@
+<?php
+    use \Infrastructure\Constants;
+?>
+<?php $__env->startSection('Title', 'Dashboard'); ?>
+
+<?php $__env->startSection('content'); ?>
+    <?php echo Form::hidden('UserJobModel', json_encode($UserJobModel),$attributes = array('id'=>'UserJobModel')); ?>
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="panel panel-Teal">
+                <div class="panel-heading">
+                    <div class="panel-title">Welcome to the Dashboard</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php if(Auth::User()->RoleTypeID != Constants::$Role_Admin){ ?>
+    <div class="row">
+        <?php if(Auth::User()->RoleTypeID == Constants::$Role_Customer || Auth::User()->RoleTypeID == Constants::$Role_Mula){ ?>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h4 data-bind="text:$root.JobPostedCount"></h4>
+                            <h4>My Posted Orders</h4>
+                        </div>
+                    </div>
+                </div>
+                <a href="order/getmyjoblist">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-orange">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h4 data-bind="text:$root.JobBiddedCount"></h4>
+                            <h4>Check Bidded Orders</h4>
+                        </div>
+                    </div>
+                </div>
+                <a href="order/getbiddedjoblist">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <?php } ?>
+        <?php if(Auth::User()->RoleTypeID == Constants::$Role_Driver || Auth::User()->RoleTypeID == Constants::$Role_Customer || Auth::User()->RoleTypeID == Constants::$Role_Mula){ ?>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-green">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h4 data-bind="text:$root.JobConfirmCount"></h4>
+                            <h4>Confirmed Orders</h4>
+                        </div>
+                    </div>
+                </div>
+                <a href="order/getmyconfirmedjoblist">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-red">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h4 data-bind="text:$root.JobCancelCount"></h4>
+                            <h4>Canceled Orders</h4>
+                        </div>
+                    </div>
+                </div>
+                <a href="order/getcanceljoblist">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <?php }?>
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="panel panel-Teal">
+                <div class="panel-heading">
+                    <div class="panel-title">My Orders</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 dashboardjoblist">
+            <div class="joblist" data-bind="foreach:OrderListArray">
+                <div class="jobCard" style="clear:both;">
+                    <div>
+                        <a class="title" data-bind="text:$data.JobName,attr:{'href':'order/getjobdetail/'+$data.EncryptedJobID()}"></a>
+                        <a class="dashboard-edit button-viewmore button-gold forecolor-white" data-bind="visible:JobStatusID() == '1' , attr:{'href':'order/add/'+$data.EncryptedJobID()}">Edit</a>
+                        <a data-bind="attr:{'class':'button-gold pull-right '+JobStatus()}"><span data-bind="text:JobStatus"></span></a>
+                    </div>
+                    <div class="stats">
+                        <span class="bold">Quantity: <span data-bind="text:Quantity"></span></span>
+                        <span class="bold">|  Items Value : <span data-bind="text:Price"></span></span>
+                        <span class="bold">|  Start Date : <span data-bind="text:StrJobStartDate"></span></span>
+                        <span class="bold">|  Delivery Date : <span data-bind="text:StrJobEndDate"></span></span>
+                        <!-- <span class="bold">| <span data-bind="text:JobStatus"></span></span> -->
+                    </div>
+                    <div class="stats left padtop">
+                        <span class="midgrey">Category:</span> <span title="" data-bind="text:JobCategories"></span>
+                    </div>
+                    <div class="desc collapsed descFull" data-bind="visible:$data.Description()!=undefined && $data.Description().length>0,text:$data.Description"></div>
+                </div>
+            </div>
+            <section id="paginations">
+                <label class="NoRecordsFound" data-bind="visible: $data.OrderListArray().length == 0">No Records Found</label>
+                <div class="" data-bind="with:pager, visible: $data.OrderListArray().length > 0">
+                    <label style="padding-top:25px" data-bind="text:FirstItemIndex()"></label>-<label data-bind="text:LastItemIndex()"></label> of <label data-bind="text:iTotalRecords()"></label> Records
+                    <ul class="pagination pull-right"  data-bind="if:allPages().length > 0">
+                        <li data-bind="css:{'disabled':currentPage()== 1} "><a title="Previous" data-bind="click: previousPage"><i class="glyphicon glyphicon-backward"></i></a></li>
+                        <!-- ko foreach: $data.pagesToShow() -->
+                        <li class="active" data-bind="css: { active: $data.pageNumber == $parent.currentPage() }">
+                            <a data-bind="attr: {title:$data.pageNumber},text: $data.pageNumber, click: $parent.gotoPage,attr:{disabled:$data.pageNumber === $parent.currentPage()}"></a></li>
+                        <!-- /ko -->
+                        <li data-bind="css:{'disabled':currentPage() == allPages().length}">
+                            <a title="Next" data-bind="click: nextPage"><i class="glyphicon glyphicon-forward"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <?php } ?>
+
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('script'); ?>
+    <script src="<?php echo asset('/assets/js/pagejs/dashboard/index.js');?>"></script>
+    <script src="<?php echo asset('/assets/js/pagejs/pager.js');?>"></script>
+    <script type="text/javascript">
+        window.TempUserID ="<?php echo Auth::user()->UserID; ?>";
+    </script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make(((Auth::user()->RoleTypeID == 1) ? 'layouts.adminmaster' : 'layouts.sitemaster'), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

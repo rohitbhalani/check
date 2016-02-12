@@ -1,0 +1,65 @@
+<?php
+use Infrastructure\Common;
+use Infrastructure\Constants;
+use \Lang;
+use \Message;
+?>
+
+<?php $__env->startSection('Title','Chnage Password'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+<main id="main" role="main" class="displayhide">
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <form class="form-horizontal" role="form" method="POST" data-bind="with:ResetModel">
+                    <header class="panel-heading">
+                        <ul class="breadcrumb breadcrumb-subpages">
+                            <li><a href="<?php echo URL::to('/dashboard'); ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                            <li class="active"> Change Password</li>
+                        </ul>
+                    </header>
+                    <div class="panel-body">
+                        <div class="form-group input-col">
+                            <label class="col-sm-2 control-label col-lg-2" for="inputError">Old Password</label>
+                            <div class="col-lg-4">
+                                <input type="password" class="form-control" id="inputError" maxlength="50" name="OldPassword" data-bind="value:$data.OldPassword,decorateErrorElement:OldPassword" placeholder="OldPassword">
+                            </div>
+                        </div>
+                        <div class="form-group input-col">
+                            <label class="col-sm-2 control-label col-lg-2" for="inputError">New Password</label>
+                            <div class="col-lg-4">
+                                <input type="password" class="form-control" id="inputError" maxlength="50"  name="Password" data-bind="value:$data.Password,decorateErrorElement:Password" placeholder="New Password">
+                            </div>
+                        </div>
+                        <div class="form-group input-col">
+                            <label class="col-sm-2 control-label col-lg-2" for="inputError">Confirm Password</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" id="inputError" maxlength="50"  name="ConfirmPassword" data-bind="value:$data.ConfirmPassword,decorateErrorElement:ConfirmPassword" placeholder="Confirm Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button type="submit" class="btn btn-success" data-bind="click:$root.ResetPassword">Change</button>
+                                <button type="button" class="btn btn-default" data-bind="click:$root.Cancel" >Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div><!--row1-->
+</main>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+    <script src="<?php echo asset('/assets/js/pagejs/admin/resetpassword.js');?>"></script>
+    <script type="text/javascript">
+        window.Required_Password ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Password')); ?>";
+        window.Required_OldPassword ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Old Password')); ?>";
+        window.Required_PasswordDoesNotMatch ="<?php echo trans('messages.PasswordDoesNotMatch'); ?>";
+        $('#addplan').addClass('active');
+    </script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,79 @@
+<?php $__env->startSection('Title', 'Rate Mula'); ?>
+
+
+<?php $__env->startSection('content'); ?>
+<?php echo Form::hidden('RatingModel', json_encode($RatingModel),$attributes = array('id'=>'RatingModel')); ?>
+
+<div class="container">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="subTitle">Review for Mula</div>
+               
+            </div>
+            
+            <div class="col-md-8">
+                    <p>Your feedback will be posted on Mula's profile and help other members make informed decisions in the future.</p>
+
+                    <h5 class="bold">Some suggested guidelines</h5>
+
+                    <ul class="col-md-12">
+                        <li>You can only leave feedback once on a job, so we recommend waiting until the job is complete.</li>
+                        <li>This is final! You cannot change your feedback once submitted.</li>
+                        <li>Please be fair, accurate and professional.</li>
+                    </ul>
+                </div>
+
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+							<div class="col-md-12 no-padding " data-bind="foreach:$root.RatingModelArray">
+								<div class="col-md-12 no-padding bottom-border">
+									<label class="control-label" data-bind="text:$data.Key"></label>
+								</div>
+
+								 <div class="col-md-12 margin-top-10">
+									<div data-bind="with:$data.Value">
+                                        <div data-bind="foreach:$data">
+    										<label class="control-label" data-bind="text:$data.Key"></label>
+
+    										<div class="radio margin-left-10" data-bind="foreach:$data.Value">
+    											<label>
+    												<input type="radio" data-bind="attr:{'name':'radio'+ $data.RatingQuestionID,'RatingAnswerID':$data.RatingAnswerID}"  name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    												<span data-bind="text:$data.RatingAnswer"></span>
+    											</label>
+    										</div>
+                                        </div>
+									 </div>
+								  </div>
+							</div>
+
+							 <div class="form-group">
+                                <div class="col-sm-3">
+                                    <button type="submit" class="btn btn-info" data-bind="click:$root.Save">Submit</button>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+  
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+
+<script src="<?php echo asset('/assets/js/pagejs/order/ratemula.js');?>"></script>
+<script type="text/javascript">
+	window.Required_NatureOfComplaint ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Nature Of Complaint')); ?>";
+	window.Required_Description ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Description')); ?>";
+</script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

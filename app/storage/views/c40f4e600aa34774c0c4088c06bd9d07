@@ -1,0 +1,140 @@
+<?php $__env->startSection('Title', 'Job Detail'); ?>
+
+<?php $__env->startSection('content'); ?>
+ 
+<?php echo Form::hidden('JobModel', json_encode($JobModel),$attributes = array('id'=>'JobModel')); ?>
+  
+  <div class="row" data-bind="with:JobDetailModel">
+       <div class="col-md-8">
+                <div class="subTitle">
+                    Job Details 
+                        <small data-bind="text:'('+JobName()+')'"> </small>
+
+                    <span class="pull-right status-title" data-bind="text:JobStatus"></span>
+                </div>
+                <!--<span class="pull-right status-title"> In Transit </span>-->
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="col-md-4">
+                            <div class="margin-bottom-10">
+                                <span class="bold">Job ID : </span><span>1245 </span>
+                            </div>
+
+                            <!-- <div class="margin-bottom-10">
+                                <span class="bold padding-bottom-10">Condition of Item : </span><span>Used </span>
+                            </div>-->
+
+                            <div class="margin-bottom-10">
+                                <span class="bold padding-bottom-10">Miles : </span><span  data-bind="text:Miles"> </span>
+                            </div>
+
+                            <div class="margin-bottom-10">
+                                <span class="bold padding-bottom-10">Pref. Transport Mode : </span><span  data-bind="text:TransportationType"></span>
+                            </div>
+
+                            <div class="margin-bottom-10">
+                                <span class="bold padding-bottom-10">No. of Items : </span><span  data-bind="text:Quantity"></span>
+                            </div>
+
+                            <div class="margin-bottom-10">
+                                <span class="bold padding-bottom-10">Items Value : </span><span  data-bind="text:Price"></span>
+                            </div>
+
+					        <div class="margin-bottom-10">
+                                <span class="bold padding-bottom-10">Start Date : </span><span  data-bind="text:StrJobStartDate"> </span>
+                            </div>
+                            
+							<div class="margin-bottom-10">
+                                <span class="bold padding-bottom-10">Delivery Date : </span><span  data-bind="text:StrJobEndDate"> </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <span class="bold">Pick up time range : </span><span data-bind="text:PickUpTime"> </span>
+                            <br />
+                            <br />
+
+                            <span class="bold">Delivery time range : </span><span data-bind="text:DeliveryTime">  </span>
+                            <br />
+                            <br />
+
+                            <span class="bold">Pick up Address : </span>
+                            <br />
+                            <span data-bind="text:PickUpAddressDetail"></span>
+                            <br />
+                            <br />
+
+                            <span class="bold">Delivery Address : </span>
+                            <br />
+                            <span data-bind="text:DeliveryAddressDetail"></span>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="jobDetailsDivider"></div>
+                        </div>
+
+                        <div class="col-md-12 margin-top-10">
+                            <span class="bold">Description :</span>
+                            <br />
+                            <p data-bind="text:Description">
+                            </p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="jobDetailsDivider"></div>
+                        </div>
+
+                        <div class="col-md-12 margin-top-10">
+                            <div>
+                                <div class="panel panel-default">
+                                    <div id="headingOne" role="tab" class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a aria-controls="collapseOne" aria-expanded="false" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" class="collapsed">Items Description
+                                <span class="glyphicon glyphicon-minus pull-right"></span>
+                                            </a>
+                                        </h3>
+                                    </div>
+
+                                    <div aria-labelledby="headingTwo" role="tabpanel" class="panel-collapse collapse in" id="collapseOne" style="height: 0px;" aria-expanded="false">
+                                        <div class="panel-body" data-bind="foreach:$root.CategoryItemArray">
+                                            <div class="col-md-12 margin-top-20">
+                                                <h3 class="panel-title border-bottom" data-bind="text:$data.Category"></h3>
+                                                <br />
+												<div data-bind="foreach:$data.SubCategories">
+													<div class="col-md-4"><span class="bold"><span data-bind="text:$data.SubCategoryName"></span> : </span><span  data-bind="text:$data.ItemCondition">Used </span></div>
+													<div class="col-md-4"><span class="bold">Quantity : </span><span  data-bind="text:$data.Quantity"></span></div>
+													<div class="col-md-4"><span class="bold">Price : </span><span  data-bind="text:$data.Price"></span></div>
+												</div>
+												
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="buyerInfo-tail"></div>
+            </div>
+
+
+          
+        </div>
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/pagejs/order/orderdetail.js');?>"></script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

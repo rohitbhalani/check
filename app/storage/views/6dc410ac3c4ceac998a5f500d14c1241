@@ -1,0 +1,139 @@
+<?php $__env->startSection('Title', 'Job List'); ?>
+
+<?php $__env->startSection('content'); ?>
+ 
+		 <div class="row">
+            <div class="col-md-3 margin-top-50">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="subTitle">Job List</div>
+
+			 <form role="form"  id="jobmodelform" class="form-horizontal" data-bind="with:SearchModel">
+
+			
+				 <div class="col-md-9 no-padding">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+
+                                                <div class="col-md-5">
+                                                    <input type="text" class="form-control" name="SearchParam" placeholder="Search Term" data-bind="value:SearchParam">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <div class="col-md-5">
+												 <input type="text" class="form-control datepicker" name="FromStartDate" placeholder="From Start Date" data-bind="datepicker:FromStartDate,datepickerOptions:{autoclose: true}" class="form-control" />
+												
+                                                </div>
+												<div class="col-md-5">
+                                                  <input type="text" class="form-control datepicker" name="ToStartDate"  placeholder="To Start Date" data-bind="datepicker:ToStartDate,datepickerOptions:{autoclose: true}" class="form-control" />
+														
+                                                </div>
+                                            </div>
+									  </div>
+
+
+									  
+                                       <div class="form-group">
+                                            <div class="col-md-12">
+                                                <div class="col-md-5">
+												 <input type="text" class="form-control datepicker" name="FromEndDate" placeholder="From End Date" data-bind="datepicker:FromEndDate,datepickerOptions:{autoclose: true}" class="form-control" />
+												
+                                                </div>
+												<div class="col-md-5">
+                                                  <input type="text" class="form-control datepicker" name="ToEndDate"  placeholder="To End Date" data-bind="datepicker:ToEndDate,datepickerOptions:{autoclose: true}" class="form-control" />
+														
+                                                </div>
+                                            </div>
+									  </div>
+
+						 <div class="col-md-10">
+                                    <button type="button" class="btn btn-info pull-right" data-bind="click:$root.pager.search">Search</button>
+                                </div>
+
+			    </div>
+					<div class="col-md-12">
+                                      <h4 class="big-heading head-border"></h4>
+                                       </div>
+			</form>
+
+
+
+
+
+		
+			<div class="joblist" data-bind="foreach:OrderListArray">
+			
+
+                <div class="jobCard" style="clear:both;">	
+                    <div>
+                        <a class="title" data-bind="text:$data.JobName,attr:{'href':'../order/getjobdetail/'+$data.JobID()}"></a>
+                    </div>
+
+                    <div class="stats">
+                        <span class="bold">Quantity: <em data-bind="text:Quantity"></em></span>
+                        <span class="bold">|  Items Value : <em data-bind="text:Price"></em></span>
+                        <span class="bold">|  Start Date : <em data-bind="text:StrJobStartDate"></em></span>
+						<span class="bold">|  Delivery Date : <em data-bind="text:StrJobEndDate"></em></span>
+                    </div>
+
+                    <div class="desc collapsed descFull" data-bind="text:$data.Description">
+                        <br />
+                    </div>
+
+                    <div class="prof">
+                        <div class="left padtop">
+                            <span class="midgrey">Category:</span> <span title="" data-bind="text:JobCategories"></span>
+                            <a class="button-viewmore button-gold" data-bind="attr:{'href':'../order/getjobdetail/'+$data.JobID()}">View More</a>
+
+							<a class="button-viewmore button-gold" data-bind="attr:{'href':'../order/add/'+$data.JobID()}">Edit</a>
+                        </div>
+
+                        <br class="clear">
+                    </div>
+                </div>
+
+               
+		</div>
+                
+            </div>
+        </div>
+
+		 <section id="paginations">
+					<label class="NoRecordsFound" data-bind="visible: $data.OrderListArray().length == 0">No Records Found</label>
+					<div class="" data-bind="with:pager, visible: $data.OrderListArray().length > 0">
+					
+						<label style="padding-top:25px" data-bind="text:FirstItemIndex()"></label>-<label data-bind="text:LastItemIndex()"></label> of <label data-bind="text:iTotalRecords()"></label> Records
+						
+						<ul class="pagination pull-right"  data-bind="if:allPages().length > 0">
+							<li data-bind="css:{'disabled':currentPage()== 1} "><a title="Previous" data-bind="click: previousPage"><i class="glyphicon glyphicon-backward"></i></a></li>
+							<!-- ko foreach: $data.pagesToShow() -->
+							<li class="active" data-bind="css: { active: $data.pageNumber == $parent.currentPage() }">
+							<a data-bind="attr: {title:$data.pageNumber},text: $data.pageNumber, click: $parent.gotoPage,attr:{disabled:$data.pageNumber === $parent.currentPage()}"></a></li>
+							<!-- /ko -->
+							<li data-bind="css:{'disabled':currentPage() == allPages().length}">
+							<a title="Next" data-bind="click: nextPage"><i class="glyphicon glyphicon-forward"></i></a></li>
+						</ul>
+						
+					</div>
+				</section>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/pagejs/order/orderlist.js');?>"></script>
+<script src="<?php echo asset('/assets/js/pagejs/pager.js');?>"></script>
+
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

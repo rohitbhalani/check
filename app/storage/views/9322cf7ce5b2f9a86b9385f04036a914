@@ -1,0 +1,239 @@
+<?php $__env->startSection('Title', 'Update rofile'); ?>
+
+<?php $__env->startSection('content'); ?>
+ 
+	<?php echo Form::hidden('UserModel', json_encode($UserModel),$attributes = array('id'=>'UserModel')); ?>
+
+	<div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">My Profile</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <form role="form" id="updateProfileform" class="form-horizontal" data-bind="with:UserModel">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label for="firstname" class="col-md-4 control-label">First Name</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" maxlength="50" name="FirstName" placeholder="First Name" data-bind="value:FirstName,decorateErrorElement:FirstName" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label for="lastname" class="col-md-4 control-label">Last Name</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" maxlength="50" name="LastName" placeholder="Last Name" data-bind="value:LastName,decorateErrorElement:LastName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label for="email" class="col-md-4 control-label">Email</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" maxlength="50" name="Email" placeholder="Email Address" data-bind="value:Email,decorateErrorElement:Email">
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="password" class="col-md-4 control-label">Password</label>
+                            <div class="col-md-8">
+                                <input type="password" class="form-control" maxlength="20" name="Password" placeholder="Password" data-bind="value:TempPassword,decorateErrorElement:TempPassword">
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="form-group">
+                        <div class="col-md-12">
+                            <label for="password" class="col-md-4 control-label">Confirm Password</label>
+                            <div class="col-md-8">
+                                <input type="password" class="form-control" maxlength="20" name="ConfirmPassword" placeholder="Confirm Password" data-bind="value:ConfirmPassword,decorateErrorElement:ConfirmPassword">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="icode" class="col-md-4 control-label">Address 1</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" maxlength="100" name="Address1" placeholder="Address1" data-bind="value:Address1,decorateErrorElement:Address1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="icode" class="col-md-4 control-label">Address 2</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" maxlength="100" name="Address2" placeholder="Address2" data-bind="value:Address2,decorateErrorElement:Address2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="icode" class="col-md-4 control-label">Phone</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" maxlength="20" name="Phone" placeholder="Phone" data-bind="value:Phone,decorateErrorElement:Phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="icode" class="col-md-4 control-label">State Code</label>
+                            <div class="col-md-8">
+                                <select data-bind="options: $root.States, optionsValue: 'StateCode', optionsText: 'StateName',value: StateCode,optionsCaption:'Select',event: { change: $root.StateSelectionChanged },decorateErrorElement:StateCode" name="StateCode" class="form-control"></select>
+								</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+							<label for="icode" class="col-md-4 control-label">City Code</label>
+                            <div class="col-md-8">
+                                <select data-bind="options: $root.Cities, optionsValue: 'CityCode', optionsText: 'CityName',value: CityCode, optionsCaption:'Select' ,decorateErrorElement:CityCode" class="form-control" name="CityCode"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="icode" class="col-md-4 control-label">Zip Code</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" maxlength="10" name="ZipCode" placeholder="Zip Code"  data-bind="value:ZipCode,decorateErrorElement:ZipCode">
+                            </div>
+                        </div>
+                    </div>
+
+
+<fieldset data-bind="visible:$root.IsAlreadyMula()==false"><legend style="padding-left:10px;">Do you want to be join us as Mula 
+<input type="checkbox" data-bind="checked:$root.IsMula" />
+</legend></fieldset>
+<div data-bind="visible:$root.ShowMulaForm">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="control-label col-md-4">Avaibility From Time</label>
+                            <div class="col-md-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control timepicker timepicker-no-seconds"  data-bind = "timePicker:AvaibilityFromTime ,timePickerOptions:{autoclose: true,defaultTime:false,minuteStep: 15,showSeconds: false,showMeridian: true},decorateErrorElement:AvaibilityFromTime" name="AvaibilityFromTime">
+                                    <span class="input-group-btn timefocus">
+                                        <button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+
+							  <label class="control-label col-md-2">To Time</label>
+                            <div class="col-md-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control timepicker timepicker-no-seconds"  data-bind = "timePicker:AvaibilityToTime,timePickerOptions:{autoclose: true,defaultTime:false,minuteStep: 15,showSeconds: false,showMeridian: true},decorateErrorElement:AvaibilityToTime" name="AvaibilityToTime">
+                                    <span class="input-group-btn timefocus">
+                                        <button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					<div class="col-md-12">
+                            <label class="control-label col-md-4"></label>
+                            <div class="col-md-8">
+                                <div class="validationMsg"></div>
+							</div>
+                    </div>
+                    
+                   
+
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label class="control-label col-md-4">How far willing to go?</label>
+                            <div class="col-md-8">
+                                 <select data-bind="options: $root.Miles, optionsValue: 'MileID', optionsText: 'Miles',value: MileID,optionsCaption:'Select',decorateErrorElement:MileID" class="form-control" name="MileID"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12" style="display: block;">
+                            <label class="control-label col-md-4">Select Transportation Mode</label>
+                            <div class="col-md-8">
+                              <select multiple="multiple" id="ms1" style="display: none;"  
+								data-bind="options: $root.TransportationModes, optionsValue: 'TransportationTypeID', optionsText: 'TransportationType',multipleSelect:UserTransportationTypes,multipleSelectOptions:{'width': '100%','filter': true},decorateErrorElement:UserTransportationTypes" name="UserTransportationTypes">
+								  </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12" style="display: block;">
+                            <label class="control-label col-md-4">Select Days of operation</label>
+                            <div class="col-md-8">
+							<select multiple="multiple" id="ms2" style="display: none;" 
+								data-bind="options: $root.OperationDays, optionsValue: 'OperationDayID', optionsText: 'OperationDay',multipleSelect:UserOperationDays,multipleSelectOptions:{'width': '100%','filter': true},decorateErrorElement:UserOperationDays" name="UserOperationDays">
+                                   
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <div class="col-md-12" style="display: block;">
+                            <label class="control-label col-md-4">What are you capable to carieer?</label>
+                            <div class="col-md-8">
+
+								 <select multiple="multiple" id="ms3" style="display: none;" 
+								data-bind="options: $root.Categories, optionsValue: 'CategoryID', optionsText: 'CategoryName',multipleSelect:UserCategories,multipleSelectOptions:{'width': '100%','filter': true},decorateErrorElement:UserCategories" name="UserCategories">
+							 </select>
+                            </div>
+                        </div>
+                    </div>
+</div>
+
+
+
+                    <div class="form-group">
+                        <label class="control-label col-md-4"></label>
+                        <div class="col-md-8">
+                            <button id="btn-signup" type="button" class="btn btn-info" data-bind="click:$root.UpdateProfile">Submit</button>
+                        </div>
+                    </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/pagejs/security/updateprofile.js');?>"></script>
+
+<script type="text/javascript">
+	window.Required_FirstName ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'First Name')); ?>";
+	window.Required_LastName ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Last Name')); ?>";
+	window.Required_Email ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Email')); ?>";
+	window.Required_Address1 ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Address')); ?>";
+	window.Required_Phone ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Phone')); ?>";
+	window.Required_StateCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'State')); ?>";
+	window.Required_CityCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'City')); ?>";
+	window.Required_ZipCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Zip Code')); ?>";
+	window.Required_Password ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Password')); ?>";
+	window.Required_PasswordDoesNotMatch ="<?php echo trans('messages.PasswordDoesNotMatch'); ?>";
+	window.Required_UserOperationDays ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Operation Days')); ?>";
+	window.Required_UserCategories ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Carrier Categories')); ?>";
+	window.Required_UserTransportationTypes ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Transportation Types')); ?>";
+	window.Required_AvaibilityFromTime ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Avaibility From Time')); ?>";
+	window.Required_AvaibilityToTime ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Avaibility To Time')); ?>";
+	window.Required_Mile ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Mile')); ?>";
+	window.Required_Redirect ="<?php echo trans('messages.Redirect'); ?>";
+	window.AvailableToTimeGreaterThanFromTime ="<?php echo trans('messages.AvailableToTimeGreaterThanFromTime'); ?>";
+
+	
+
+   </script>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,286 @@
+<?php $__env->startSection('Title', 'Job Detail'); ?>
+<?php $__env->startSection('content'); ?>
+
+    <?php echo Form::hidden('JobDetailsModel', json_encode($JobDetailsModel),$attributes = array('id'=>'JobDetailsModel')); ?>
+
+    <div class="row" data-bind="with:JobDetailModel">
+        <div class="col-md-12">
+            <div class="subTitle">
+                Job Details
+                <small data-bind="text:'('+JobName()+')'"> </small>
+
+                <span class="pull-right status-title" data-bind="text:JobStatus"></span>
+            </div>
+            <!--<span class="pull-right status-title"> In Transit </span>-->
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        <div class="margin-bottom-10" data-bind="visible:$data.JobStatusID() >= $root.JobStatus_Confirmed(),with:$root.AcceptUserDetail">
+                            <span class="bold padding-bottom-10">Job Assign To : </span><span  data-bind="text:FirstName()+' '+LastName()"> </span>
+                        </div>
+
+                        <div class="margin-bottom-10">
+                            <span class="bold">Job ID : </span><span data-bind="text:JobNumber"></span>
+                        </div>
+
+                        <!-- <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">Condition of Item : </span><span>Used </span>
+                        </div>-->
+
+                        <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">Total Miles : </span><span  data-bind="text:Distance"> </span>
+                        </div>
+
+                        <!--  <div class="margin-bottom-10">
+                             <span class="bold padding-bottom-10">Miles : </span><span  data-bind="text:Distance"></span>
+                         </div>
+                         -->
+
+                        <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">No. of Items : </span><span  data-bind="text:Quantity"></span>
+                        </div>
+
+                        <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">Items Value : </span><span  data-bind="text:Price"></span>
+                        </div>
+                       
+                        <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">Service Name : </span><span  data-bind="text:ServiceName"> </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">Start Date : </span><span  data-bind="text:StrJobStartDate"> </span>
+                        </div>
+
+                        <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">Delivery Date : </span><span  data-bind="text:StrJobEndDate"> </span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="bold">Pick up time range : </span><span data-bind="text:PickUpTime"> </span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="bold">Delivery time range : </span><span data-bind="text:DeliveryTime">  </span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="bold">Pick up Address : </span><span data-bind="text:PickUpCity"></span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="bold">Delivery Address : </span><span data-bind="text:DropCity"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">Frequency : </span><span  data-bind="text:Frequency"> </span>
+                        </div>
+                        <div class="margin-bottom-10">
+                            <span class="bold padding-bottom-10">Total Weight : </span><span  data-bind="text:TotalWeight"> </span>
+                        </div>
+                        <div class="margin-bottom-10" data-bind="visible:$data.JobStatusID() == $root.JobStatus_Confirmed() || $data.JobStatusID() == $root.JobStatus_PickedUp()">
+                             <span class="bold padding-bottom-10">Pickup Code : </span><span  data-bind="text:PickupCode"></span>
+                         </div>
+                         <div class="margin-bottom-10" data-bind="visible:$data.JobStatusID() == $root.JobStatus_Confirmed() || $data.JobStatusID() == $root.JobStatus_PickedUp()">
+                             <span class="bold padding-bottom-10">Deliver Code : </span><span  data-bind="text:DeliveryCode"></span>
+                         </div>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="jobDetailsDivider"></div>
+                    </div>
+
+                    <div class="col-md-12 margin-top-10">
+                        <span class="bold">Description :</span>
+                        <br />
+                        <p data-bind="text:Description()!=undefined && Description().length>0?Description():'Sorry, Description not available.'">
+                        </p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="jobDetailsDivider"></div>
+                    </div>
+
+                    <div class="col-md-12 margin-top-10">
+                        <div>
+                            <div class="panel panel-default">
+                                <div id="headingOne" role="tab" class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a aria-controls="collapseOne" aria-expanded="false" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" class="collapsed">Items Description
+                                            <span class="glyphicon pull-right"></span>
+                                        </a>
+                                    </h3>
+                                </div>
+
+                                <div aria-labelledby="headingTwo" role="tabpanel" class="panel-collapse collapse in" id="collapseOne" style="height: 0px;" aria-expanded="false">
+                                    <div class="panel-body" data-bind="foreach:$root.CategoryItemArray">
+                                        <div class="col-md-12 margin-top-20">
+                                            <h3 class="panel-title border-bottom" data-bind="text:$data.Category"></h3>
+                                            <br />
+                                            <div data-bind="foreach:$data.SubCategories">
+                                                <div class="col-md-4"><span class="bold"><span data-bind="text:$data.SubCategoryName"></span> : </span><span  data-bind="text:$data.ItemCondition">Used </span></div>
+                                                <div class="col-md-4"><span class="bold">Quantity : </span><span  data-bind="text:$data.Quantity"></span></div>
+                                                <div class="col-md-4"><span class="bold">Price : </span><span  data-bind="text:$data.Price"></span></div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="jobDetailsDivider"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="map" data-bind="visible:$data.JobStatusID() == $root.JobStatus_PickedUp()"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="jobDetailsDivider"></div>
+                    </div>
+                    
+
+                    <div class="col-md-12">
+<?php /*<a  type="button" class="btn btn-dark" data-bind="visible:$data.JobStatusID() >= $root.JobStatus_Confirmed() && $data.JobStatusID()!= $root.JobStatus_DisputeRaised(),attr:{'href':'../raisedispute/'+$data.EncryptedJobID()}">Raise Dispute</a>*/ ?>
+
+                        <button type="button" class="btn btn-dark" data-bind="visible:$data.JobStatusID() == $root.JobStatus_PickedUp() || $data.JobStatusID()== $root.JobStatus_Confirmed() || $data.JobStatusID() == $root.JobStatus_Delivered() || $data.JobStatusID() == $root.JobStatus_Cancelled()" data-toggle="modal" data-target="#raisedialog">Raise Dispute</button>
+
+                        <button type="button" class="btn button-success" data-bind="visible:$data.JobStatusID() == $root.JobStatus_Delivered() " data-toggle="modal" data-target="#ratemula">Rate Mula</button>
+                        
+                        <button  type="button" class="btn btn-info" data-bind="visible:$data.JobStatusID() < $root.JobStatus_PickedUp(),click:$root.CancelOrder">Cancel Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buyerInfo-tail"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="raisedialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <form class="form-horizontal" id="raisedisputeform"  data-bind="with:RaiseDisputeModel">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" data-bind="click:$root.CloseRaiseDispute" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Raise Dispute</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Nature Of Complaint </label>
+                            <div class="col-md-9">
+                                <select data-bind="options: $root.NatureOfComplaints, optionsValue: 'NatureOfComplaintID', optionsText: 'NatureOfComplaint',value: NatureOfComplaintID,optionsCaption:'Select',decorateErrorElement:NatureOfComplaintID" name="NatureOfComplaintID" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Description </label>
+                            <div class="col-md-9">
+                                <textarea type="text" class="form-control" maxlength="100000" name="Description" placeholder="Description" data-bind="value:Description,decorateErrorElement:Description"></textarea>
+                            </div>
+                        </div>
+
+                        <input  type="file" id="browse" multiple='allow' name="files" title="Upload file"  class="dz-upload floatLeft"  data-bind="ApplyFileUploadRaise:$root.UploadFileUrl,paraMeter:$data.JobID(),
+                                            onSuccessCallback:$root.FileUploadCompletedCallback,onErrorCallback:$root.FileUploadErrorCallback,acceptedFiles:''" tabindex="110" style="display: none"/>
+                        <input type="file" id="btn browse" name="fileupload" style="display: none" onChange="Handlechange();"/>
+                        <input type="button" value="Browse Files" id="fakeBrowse" data-bind="click:$root.HandleBrowseClick"/>
+                        <div class="fileInfo" data-bind="visible:$data.FileDetails().length>0, foreach:$data.FileDetails">
+                            <div class="row-block">
+                                <span data-bind="visible:FileGuidName()">File Name: </span>
+                                <a  tabindex = "111" target="_blank" data-bind=""><span data-bind="text:FileName"></span></a>
+                                <a  href="javascript:void(0)" tabindex = "112" class="pointer removefile" data-bind="visible:FileGuidName(),click:$root.RemoveUploadedFileCallback">
+                                    <i class="text text-danger font-small glyphicon glyphicon-minus-sign"></i>Remove File
+                                </a>
+                                <span class="right error-color uploadMessage" data-bind="visible:!FileGuidName()">*Please upload a file</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-bind="click:$root.CloseRaiseDispute" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="btn-signup" type="button" class="btn button-success" data-bind="click:$root.SaveRaiseDispute">Send</button>
+                </div>
+            </div>
+           </form>
+        </div>
+    </div>
+    <div class="modal fade" id="ratemula" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Review for mula</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                                                <div class="col-md-12">
+                            <p>Your feedback will be posted on Mula's profile and help other members make informed decisions in the future.</p>
+
+                            <h5 class="bold">Some suggested guidelines</h5>
+
+                            <ul class="col-md-12">
+                                <li>You can only leave feedback once on a job, so we recommend waiting until the job is complete.</li>
+                                <li>This is final! You cannot change your feedback once submitted.</li>
+                                <li>Please be fair, accurate and professional.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="col-md-12 no-padding " data-bind="foreach:$root.RatingModelArray">
+                                        <div class="col-md-12 no-padding bottom-border">
+                                            <label class="control-label" data-bind="text:$data.Key"></label>
+                                        </div>
+
+                                        <div class="col-md-12 margin-top-10">
+                                            <div data-bind="with:$data.Value">
+                                                <div data-bind="foreach:$data">
+                                                    <label class="control-label" data-bind="text:$data.Key"></label>
+
+                                                    <div class="radio margin-left-10" data-bind="foreach:$data.Value">
+                                                        <label>
+                                                            <input type="radio" data-bind="attr:{'name':'radio'+ $data.RatingQuestionID,'RatingAnswerID':$data.RatingAnswerID}"  name="optionsRadios" id="optionsRadios1" value="">
+                                                            <span data-bind="text:$data.RatingAnswer"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<div class="col-md-12">
+                            <div class="form-group" data-bind="visible:$root.IsFavouriteMula()!=true">
+                                <label for="icode" class="col-md-3 control-label">Add mula to my favorite</label>
+                                <div class="col-md-9">
+                                    <input type="checkbox" name="registermula" placeholder="registermula" data-bind="checked:$root.IsFavouriteMula">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" data-bind="click:$root.SaveRate">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+    <script src="<?php echo asset('/assets/js/pagejs/order/orderdetail.js');?>"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+    <script type="text/javascript">
+        window.Required_NatureOfComplaint ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Nature Of Complaint')); ?>";
+        window.Required_Description ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Description')); ?>";
+        //window.Required_FileDetails ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'FileDetails')); ?>";
+    </script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

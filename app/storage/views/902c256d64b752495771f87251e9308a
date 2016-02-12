@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Laravel - <?php echo $__env->yieldContent('title'); ?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<script>window.baseUrl = "<?php echo e(isset($BaseUrl) ? $BaseUrl : 'Default'); ?>";</script>
+    <link href="<?php echo asset('/Assets/css/font-awesome.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/simple-line-icons/simple-line-icons.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/bootstrap.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/bootstrap-dialog.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/uniform/css/uniform.default.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/bootstrap-switch/css/bootstrap-switch.css');?>">
+	<link href="<?php echo asset('/Assets/css/toaster/toaster.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/select2/select2.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/login.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/components.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/plugins.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/layout.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/default.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/custom.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/social_networking_buttons.css');?>" rel="stylesheet">
+    <link href="<?php echo asset('/Assets/css/bootstrap-dialog.css');?>" rel="stylesheet">
+    <script src="<?php echo asset('/Assets/js/jquery-1.11.1.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/PageLibraries/jquery.history.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/PageLibraries/knockout-2.1.0.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/PageLibraries/knockout.mapping.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/PageLibraries/knockout.validation.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/toaster/toaster.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/pagejs/Common.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/bootstrap.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/BootstrapDialogJs/bootstrap-dialog.js');?>"></script>
+	<?php echo $__env->yieldContent('script'); ?>
+
+	
+    <!-- END THEME STYLES -->
+    <link rel="icon" type="img/ico" href="/favicon.ico">
+	</head>
+    <body class="login">
+    	
+		<div class="logo"> &nbsp;
+			<!--<a href="#">
+				<img src="images/logo.png" alt="" />
+			</a>-->
+		</div>
+        <!--<?php $__env->startSection('sidebar'); ?>
+            This is the master sidebar.
+        <?php echo $__env->yieldSection(); ?>-->
+        <div class="content">
+            <?php echo $__env->yieldContent('content'); ?>
+        </div>
+    </body>
+</html>

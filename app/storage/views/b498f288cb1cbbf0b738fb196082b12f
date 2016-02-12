@@ -1,0 +1,73 @@
+<?php
+use \Lang;
+use \Message;
+?>
+
+<?php $__env->startSection('Title'); ?><?php print 'Script List'; ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+    <main id="main" role="main" style="display: none;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel">
+                    <header class="panel-heading">
+                        <ul class="breadcrumb breadcrumb-subpages">
+                            <li><a href="<?php echo URL::to('/dashboard'); ?>"><i class="fa fa-home"></i> Dashboard</a></li>
+                            <li class="active">Script List</li>
+                        </ul>
+                    </header>
+                    <div class="panel-body table-responsive ">
+                        <table class="table table-bordered table-responsive-margin">
+                            <thead data-bind="visible:$root.ScriptListArray().length > 0">
+                            <tr data-bind="with:pager">
+                                <th style="width: 10%" class="text-align-center">Sr.No</th>
+                                <th style="width: 25%" class="text-align-center">Segment Name</th>
+                                <th style="width: 40%" class="text-align-center">Script</th>
+                                <th class="text-align-center width-5p">Edit</th>
+                                <th style="width: 5%" class="text-align-center">Enable</th>
+                            </tr>
+                            </thead>
+                            <tbody data-bind="foreach:$root.ScriptListArray(),visible:$root.ScriptListArray().length > 0">
+                            <tr>
+                                <td class="text-align-center" data-bind="text:$data.Index"></td>
+                                <td data-bind="text:$data.SegmentName"></td>
+                                <td data-bind="text:$data.Script"></td>
+                                <td><div class="hidden-phone text-align-center">
+                                        <a class="btn btn-default btn-xs" data-bind="attr:{'href':'addscript/'+$data.EncryptScriptID()}"><i class="fa fa-pencil fa-edit-color"></i></a>
+                                    </div>
+                                </td>
+                                <td class="text-align-center" data-bind=""><input type="checkbox" data-bind="checked: $data.IsEnable,click: $root.EnableAnalyst"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-foot">
+                            <div class="" data-bind="with:pager, visible: $data.ScriptListArray().length > 0">
+                                <ul class="pagination pagination-sm no-margin pull-right" data-bind="if:allPages().length > 0">
+                                    <li data-bind="css:{'disabled':currentPage()== 1} "><a title="Previous" data-bind="click: previousPage"><span class="arrow"></span> Prev</a></li>
+                                    <!-- ko foreach: $data.pagesToShow() -->
+                                    <li class="active" data-bind="css: { active: $data.pageNumber == $parent.currentPage() }">
+                                        <a data-bind="attr: {title:$data.pageNumber},text: $data.pageNumber, click: $parent.gotoPage,attr:{disabled:$data.pageNumber === $parent.currentPage()}"></a>
+                                    </li>
+                                    <!-- /ko -->
+                                    <li data-bind="css:{'disabled':currentPage() == allPages().length}">
+                                        <a title="Next" data-bind="click: nextPage">Next <span class="arrow"></span></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /.panel-body -->
+                </div><!-- /.panel -->
+
+            </div>
+        </div>
+    </main>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+    <script src="<?php echo asset('/assets/js/pagejs/pager.js');?>"></script>
+    <script src="<?php echo asset('/assets/js/pagejs/admin/scriptlist.js');?>"></script>
+    <script type="text/javascript">
+        $('#script').addClass('active');
+        $('#scriptlist').addClass('active');
+    </script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

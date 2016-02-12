@@ -1,0 +1,15 @@
+<?php $__env->startSection('Title', 'Dashboard'); ?>
+
+<?php $__env->startSection('content'); ?>
+	
+	<span>Welcome on Dashboard</span>
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

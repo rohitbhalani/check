@@ -1,0 +1,125 @@
+<?php $__env->startSection('Title', 'My Job List'); ?>
+
+
+<?php $__env->startSection('content'); ?>
+    
+    <?php echo Form::hidden('JobListModel', json_encode($JobListModel),$attributes = array('id'=>'JobListModel')); ?>
+
+         <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default" data-bind="with:SearchModel">
+                    <div class="panel-heading">
+                        Search
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 no-padding margin-bottom-10 ">
+                           <input type="text" class="form-control" name="SearchParam" placeholder="Search Term" data-bind="value:SearchParam">
+                        </div>
+
+                        <div class="col-md-12 no-padding">
+                            <div class="margin-bottom-10 border-bottom"><a href="#"><span class="bold">Start Date</span></a></div>
+                            
+                                        <div >
+                                                 <input type="text" class="form-control datepicker" name="FromStartDate" placeholder="From Start Date" data-bind="datepicker:FromStartDate,datepickerOptions:{autoclose: true}" class="form-control" />
+                                                
+                                                </div>
+                                                  <br />
+                                                <div >
+                                                  <input type="text" class="form-control datepicker" name="ToStartDate"  placeholder="To Start Date" data-bind="datepicker:ToStartDate,datepickerOptions:{autoclose: true}" class="form-control" />
+                                                        
+                                                </div>
+
+
+
+
+                            <br />
+                        </div>
+
+
+                        <div class="col-md-12 no-padding">
+                            <div class="margin-bottom-10 border-bottom"><a href="#"><span class="bold">Ending Date</span></a></div>
+                            
+                                       <div >
+                                                 <input type="text" class="form-control datepicker" name="FromEndDate" placeholder="From End Date" data-bind="datepicker:FromEndDate,datepickerOptions:{autoclose: true}" class="form-control" />
+                                                
+                                                </div>
+                                                  <br />
+                                                <div >
+                                                  <input type="text" class="form-control datepicker" name="ToEndDate"  placeholder="To End Date" data-bind="datepicker:ToEndDate,datepickerOptions:{autoclose: true}" class="form-control" />
+                                                        
+                                                </div>
+
+
+
+
+                            <br />
+                        </div>
+
+
+                         <div class="col-md-12">
+                                    <button type="button" class="btn btn-info pull-right" data-bind="click:$root.pager.search">Search</button>
+                                </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 dashboardjoblist">
+                <div class="subTitle"><span data-bind="text: $root.RoleType()==2?$root.PageTitle()+ ' Orders List':$root.PageTitle()+' Jobs List'"></span></div>
+                
+            <div class="joblist" data-bind="foreach:OrderListArray">
+
+                <div class="jobCard" style="clear:both;">
+                    <div>
+                        <a class="title" data-bind="text:$data.JobName,attr:{'href':'../order/getjobdetail/'+$data.EncryptedJobID()}"></a>
+                        <a class="dashboard-edit button-viewmore button-gold forecolor-white" data-bind="visible:$data.JobStatusID()== $root.JobStatus_Bidded(),text:'View Bids' + ': ' + $data.BidCount(),attr:{'href':'../order/getbiddetails/'+$data.EncryptedJobID()}"></a>
+                        <a class="dashboard-edit button-viewmore button-gold forecolor-white" data-bind="visible:$root.PageTitle()=='',attr:{'href':'../order/add/'+$data.EncryptedJobID()}">Edit</a>
+                        <a data-bind="attr:{'class':'button-gold pull-right '+JobStatus()}"><span data-bind="text:JobStatus"></span></a>
+                    </div>
+                    <div class="stats">
+                        <span class="bold">Quantity: <span data-bind="text:Quantity"></span></span>
+                        <span class="bold">|  Items Value : <span data-bind="text:Price"></span></span>
+                        <span class="bold">|  Start Date : <span data-bind="text:StrJobStartDate"></span></span>
+                        <span class="bold">|  Delivery Date : <span data-bind="text:StrJobEndDate"></span></span>
+                        <!-- <span class="bold">| <span data-bind="text:JobStatus"></span></span> -->
+                    </div>
+                    <div class="stats left padtop">
+                        <span class="midgrey">Category:</span> <span title="" data-bind="text:JobCategories"></span>
+                    </div>
+                    <div class="desc collapsed descFull" data-bind="visible:$data.Description()!=undefined && $data.Description().length>0,text:$data.Description"></div>
+                </div>
+          </div>
+           <section id="paginations">
+                    <label class="NoRecordsFound" data-bind="visible: $data.OrderListArray().length == 0">No Records Found</label>
+                    <div class="" data-bind="with:pager, visible: $data.OrderListArray().length > 0">
+                    
+                        <label style="padding-top:25px" data-bind="text:FirstItemIndex()"></label>-<label data-bind="text:LastItemIndex()"></label> of <label data-bind="text:iTotalRecords()"></label> Records
+                        
+                        <ul class="pagination pull-right"  data-bind="if:allPages().length > 0">
+                            <li data-bind="css:{'disabled':currentPage()== 1} "><a title="Previous" data-bind="click: previousPage"><i class="glyphicon glyphicon-backward"></i></a></li>
+                            <!-- ko foreach: $data.pagesToShow() -->
+                            <li class="active" data-bind="css: { active: $data.pageNumber == $parent.currentPage() }">
+                            <a data-bind="attr: {title:$data.pageNumber},text: $data.pageNumber, click: $parent.gotoPage,attr:{disabled:$data.pageNumber === $parent.currentPage()}"></a></li>
+                            <!-- /ko -->
+                            <li data-bind="css:{'disabled':currentPage() == allPages().length}">
+                            <a title="Next" data-bind="click: nextPage"><i class="glyphicon glyphicon-forward"></i></a></li>
+                        </ul>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/pagejs/order/myorderlist.js');?>"></script>
+<script src="<?php echo asset('/assets/js/pagejs/pager.js');?>"></script>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

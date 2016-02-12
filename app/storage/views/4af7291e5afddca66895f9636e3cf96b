@@ -1,0 +1,124 @@
+<?php $__env->startSection('Title', 'Signup'); ?>
+
+<?php $__env->startSection('content'); ?>
+ 
+	<?php echo Form::hidden('UserModel', json_encode($UserModel),$attributes = array('id'=>'UserModel')); ?>
+
+	<div id="signupbox" style="margin-top: 50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Sign Up</div>
+                    <!--<div style="float: right; font-size: 85%; position: relative; top: -10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>-->
+                </div>
+                <div class="panel-body">
+                    <form id="signupform" class="form-horizontal" role="form" data-bind="with:UserModel">
+
+                        <div id="signupalert" style="display: none" class="alert alert-danger">
+                            <p>Error:</p>
+                            <span></span>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-md-3 control-label">First Name</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" maxlength="50"  name="FirstName" placeholder="First Name" data-bind="value:FirstName,decorateErrorElement:FirstName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" maxlength="50" name="LastName" placeholder="Last Name" data-bind="value:LastName,decorateErrorElement:LastName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-md-3 control-label">Email</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" maxlength="50" name="Email" placeholder="Email Address" data-bind="value:Email,decorateErrorElement:Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-md-3 control-label">Password</label>
+                            <div class="col-md-9">
+                                <input type="password" class="form-control" maxlength="20" name="Password" placeholder="Password" data-bind="value:TempPassword,decorateErrorElement:TempPassword">
+                            </div>
+                        </div>
+						 <div class="form-group">
+                            <label for="password" class="col-md-3 control-label">Confirm Password</label>
+                            <div class="col-md-9">
+                                <input type="password" class="form-control" maxlength="20"  name="cnfpasswd" placeholder="Confirm Password" data-bind="value:ConfirmPassword,decorateErrorElement:ConfirmPassword">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="icode" class="col-md-3 control-label">Address 1</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" maxlength="100" name="Address1" placeholder="" data-bind="value:Address1,decorateErrorElement:Address1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="icode" class="col-md-3 control-label">Address 2</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" maxlength="100" name="Address2" placeholder="" data-bind="value:Address2,decorateErrorElement:Address2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="icode" class="col-md-3 control-label">Phone</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" maxlength="20" name="Phone" placeholder="Phone" data-bind="value:Phone,decorateErrorElement:Phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="icode" class="col-md-3 control-label">State Code</label>
+                            <div class="col-md-9">
+                                 <select data-bind="options: $root.States, optionsValue: 'StateCode', optionsText: 'StateName',value: StateCode,optionsCaption:'Select',event: { change: $root.StateSelectionChanged },decorateErrorElement:StateCode" name="StateCode" class="form-control seatdropdown"></select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="icode" class="col-md-3 control-label">City Code</label>
+                            <div class="col-md-9">
+
+						 <select data-bind="options: $root.Cities, optionsValue: 'CityCode', optionsText: 'CityName',value: CityCode, optionsCaption:'Select',decorateErrorElement:CityCode" name="CityCode"  class="form-control seatdropdown"></select>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="icode" class="col-md-3 control-label">Zip Code</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" maxlength="10" name="ZipCode" placeholder="Zip Code" data-bind="value:ZipCode,decorateErrorElement:ZipCode">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Button -->
+                            <div class="col-md-offset-3 col-md-9">
+                                <button id="btn-signup" type="button" class="btn btn-info" data-bind="click:$root.SaveUser">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/pagejs/security/signup.js');?>"></script>
+
+ <script type="text/javascript">
+	window.Required_FirstName ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'First Name')); ?>";
+	window.Required_LastName ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Last Name')); ?>";
+	window.Required_Email ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Email')); ?>";
+	window.Required_Address1 ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Address')); ?>";
+	window.Required_Phone ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Phone')); ?>";
+	window.Required_StateCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'State')); ?>";
+	window.Required_CityCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'City')); ?>";
+	window.Required_ZipCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Zip Code')); ?>";
+	window.Required_Password ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Password')); ?>";
+	window.Required_PasswordDoesNotMatch ="<?php echo trans('messages.PasswordDoesNotMatch'); ?>";
+	window.Required_Redirect ="<?php echo trans('messages.Redirect'); ?>";
+
+    
+   </script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.loginmaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

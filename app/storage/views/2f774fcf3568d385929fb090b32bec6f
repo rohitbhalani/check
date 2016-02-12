@@ -1,0 +1,141 @@
+<?php $__env->startSection('title', 'UsersList'); ?>
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/Assets/js/pagejs/User/UsersList.js');?>"></script>
+<script src="<?php echo asset('/Assets/js/pagejs/pager.js');?>"></script>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            <form data-bind="with:$data.Searchobj()" id="frmUsers" method="POST"  class="form-horizontal" role="form">
+				 <h3 class="page-title">User List</h3>
+				 <hr>
+				 <br>
+				 <div class="form-group">
+					<?php echo Form::label('FirstName', 'First Name', array('class' => 'col-sm-1 control-label')); ?>
+					<div class="col-sm-4">
+						<?php echo Form::text("FirstName", $value = null, $attributes = array('data-bind'=>'value:$data.FirstName', 'class'=>'form-control')); ?>
+					</div>
+					<?php echo Form::label('LastName', 'Last Name', array('class' => 'col-sm-1 control-label')); ?>
+					<div class="col-sm-4">
+						 <?php echo Form::text("LastName", $value = null, $attributes = array('data-bind'=>'value:$data.LastName', 'class'=>'form-control')); ?>
+					</div>
+				 </div>
+				 <div class="form-group">
+					<?php echo Form::label('Phone', 'Phone', array('class' => 'col-sm-1 control-label')); ?>
+					<div class="col-sm-4">
+						 <?php echo Form::text("LastName", $value = null, $attributes = array('data-bind'=>'value:$data.Phone', 'class'=>'form-control')); ?>
+					</div>
+					<?php echo Form::label('Email', 'Email', array('class' => 'col-sm-1 control-label')); ?>
+					<div class="col-sm-4">
+						<?php echo Form::text("Email", $value = null, $attributes = array('data-bind'=>'value:$data.Email', 'class'=>'form-control')); ?>
+					</div>
+				 </div>
+				 <div class="form-group">
+					<label class="col-sm-1 control-label" for="Phone"></label>					
+					<div class="col-sm-4"></div>
+					<label class="col-sm-1 control-label" for="Email"></label>					<div class="col-sm-4 text-right">
+						<button type="botton" class="btn btn-primary" id="saveButton" data-bind="click:$root.pager.search">Search <i class="m-icon-swapright m-icon-white"></i></button>
+						<button type="botton" class="btn btn-default" id="saveButton" data-bind="click:$parent.ClearSearch">Clear <i class="m-icon-swapright m-icon-white"></i></button>
+						</div>
+				 </div>
+				 <!--<div class="form-group">
+                    <div class="pull-right">
+                    	<button type="botton" class="btn btn-primary" id="saveButton" data-bind="click:$root.pager.search">Search <i class="m-icon-swapright m-icon-white"></i></button>
+                    	<button type="botton" class="btn btn-primary" id="saveButton" data-bind="click:$root.pager.search">Clear <i class="m-icon-swapright m-icon-white"></i></button>
+					</div>
+				</div>
+			--></form>
+			<form action="exportusers" method="post" data-bind="with:$data.Searchobj()">
+				 <?php echo Form::hidden("FirstName", $value = null, $attributes = array('data-bind'=>'value:$data.FirstName')); ?>
+				 <?php echo Form::hidden("LastName", $value = null, $attributes = array('data-bind'=>'value:$data.LastName')); ?>
+				 <?php echo Form::hidden("MiddleName", $value = null, $attributes = array('data-bind'=>'value:$data.MiddleName')); ?>
+				 <?php echo Form::hidden("Email", $value = null, $attributes = array('data-bind'=>'value:$data.Email')); ?>
+				 <?php echo Form::hidden("Phone", $value = null, $attributes = array('data-bind'=>'value:$data.Phone')); ?>
+				 <?php echo Form::hidden("sortIndex", $value = null, $attributes = array('data-bind'=>'value:$root.pager.sort()')); ?>
+				 <?php echo Form::hidden("sortDirection", $value = null, $attributes = array('data-bind'=>'value:$root.pager.sortDirection()')); ?>
+				<button class="btn btn-link pull-right glyphicon glyphicon-download-alt" type="submit"></button>
+				
+			</form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr data-bind="with:pager" class="heading">
+								<th class="col-sm-7" data-bind="with: new sortModel()" >
+									<span class="sortable" data-bind="click:function(){$data.sort('FirstName');}">FirstName<i class="glyphicon" data-bind="visible:$parent.currentSort()==$data, css:{'glyphicon-arrow-down':$data.isDesending(), 'glyphicon-arrow-up': !$data.isDesending()}"></i>
+									</span>
+								</th>
+								<th class="col-sm-7" data-bind="with: new sortModel()">
+									<span class="sortable" data-bind="click:function(){$data.sort('LastName');}">LastName<i class="glyphicon" data-bind="visible:$parent.currentSort()==$data, css:{'glyphicon-arrow-down':$data.isDesending(), 'glyphicon-arrow-up': !$data.isDesending()}"></i>
+									</span>
+								</th>
+								<th class="col-sm-7" data-bind="with: new sortModel()">
+									<span class="sortable" data-bind="click:function(){$data.sort('MiddleName');}">MiddleName<i class="glyphicon" data-bind="visible:$parent.currentSort()==$data, css:{'glyphicon-arrow-down':$data.isDesending(), 'glyphicon-arrow-up': !$data.isDesending()}"></i>
+									</span>
+								</th>
+								<th class="col-sm-7" data-bind="with: new sortModel()">
+									<span class="sortable" data-bind="click:function(){$data.sort('Phone');}">Phone<i class="glyphicon" data-bind="visible:$parent.currentSort()==$data, css:{'glyphicon-arrow-down':$data.isDesending(), 'glyphicon-arrow-up': !$data.isDesending()}"></i>
+									</span>
+								</th>	
+								<th class="col-sm-7" data-bind="with: new sortModel()">
+									<span class="sortable" data-bind="click:function(){$data.sort('Email');}">Email<i class="glyphicon" data-bind="visible:$parent.currentSort()==$data, css:{'glyphicon-arrow-down':$data.isDesending(), 'glyphicon-arrow-up': !$data.isDesending()}"></i>
+									</span>
+								</th>	
+							</tr>
+                        </thead>
+                        <tbody>
+                            <!-- ko foreach:$data.userListArray()  -->
+							<tr>
+								<td data-bind="text:FirstName"></td>
+								<td data-bind="text:LastName"></td>
+								<td data-bind="text:MiddleName"></td>
+								<td data-bind="text:Phone"></td>
+								<td data-bind="text:Email"></td>
+								
+							</tr>
+							<!-- /ko -->
+                        </tbody>
+                    </table>
+                </div>
+                <section id="paginations">
+					<label class="NoRecordsFound" data-bind="visible: $data.userListArray().length == 0">No Records Found</label>
+					<div class="" data-bind="with:pager, visible: $data.userListArray().length > 0">
+					
+						<label style="padding-top:25px" data-bind="text:FirstItemIndex()"></label>-<label data-bind="text:LastItemIndex()"></label> of <label data-bind="text:iTotalRecords()"></label> Records
+						
+						<ul class="pagination pull-right"  data-bind="if:allPages().length > 0">
+							<li data-bind="css:{'disabled':currentPage()== 1} "><a title="Previous" data-bind="click: previousPage"><i class="glyphicon glyphicon-backward"></i></a></li>
+							<!-- ko foreach: $data.pagesToShow() -->
+							<li class="active" data-bind="css: { active: $data.pageNumber == $parent.currentPage() }">
+							<a data-bind="attr: {title:$data.pageNumber},text: $data.pageNumber, click: $parent.gotoPage,attr:{disabled:$data.pageNumber === $parent.currentPage()}"></a></li>
+							<!-- /ko -->
+							<li data-bind="css:{'disabled':currentPage() == allPages().length}">
+							<a title="Next" data-bind="click: nextPage"><i class="glyphicon glyphicon-forward"></i></a></li>
+						</ul>
+						
+					</div>
+				</section>
+				<!--<div class="col-md-12" style="padding: 0;">
+	                <ul class="pagination pull-right" data-bind="if:allPages().length > 0">
+						<li data-bind="css:{'disabled':currentPage()== 1} "><a title="Previous" data-bind="click: previousPage"><i class="glyphicon glyphicon-backward"></i></a></li>
+						 ko foreach: $data.pagesToShow() 
+						<li class="active" data-bind="css: { active: $data.pageNumber == $parent.currentPage() }">
+						<a data-bind="attr: {title:$data.pageNumber},text: $data.pageNumber, click: $parent.gotoPage,attr:{disabled:$data.pageNumber === $parent.currentPage()}"></a></li>
+						 /ko 
+						<li data-bind="css:{'disabled':currentPage() == allPages().length}">
+						<a title="Next" data-bind="click: nextPage"><i class="glyphicon glyphicon-forward"></i></a></li>
+					</ul>
+                </div>-->
+                </div>
+        </div>
+
+    </div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

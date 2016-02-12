@@ -1,0 +1,502 @@
+<?php $__env->startSection('Title', 'Add Job'); ?>
+
+<?php $__env->startSection('content'); ?>
+ 	<?php echo Form::hidden('JobModel', json_encode($JobModel),$attributes = array('id'=>'JobModel')); ?>
+		
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="subTitle">Post Job</div>
+                <!--<span class="pull-right status-title"> In Transit </span>-->
+            </div>
+        </div>
+        
+         <!-- <div role="alert" class="alert alert-info">
+            <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        </div> -->
+
+
+
+         <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                  
+                    <div class="panel-body">
+                        <div class="row">
+                            <form role="form"  id="jobmodelform" class="form-horizontal" data-bind="with:JobModel">
+                                <div class="col-md-12 no-padding">
+									<div class="col-md-12">
+    									<div class="col-md-12">
+                                            <h4 class="big-heading head-border">Job Detail</h4>
+                                        </div>
+
+                                    <div class="col-md-6 no-padding">
+                                        
+										<!--
+										<div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="firstname" class="col-md-5 control-label">Title</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" maxlength="100" name="JobName"  placeholder="Title" data-bind="value:JobName,decorateErrorElement:JobName">
+                                                </div>
+                                            </div>
+                                        </div>  !-->
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="firstname" class="col-md-5 control-label">Description</label>
+                                                <div class="col-md-7">
+                                                    <textarea class="form-control"  maxlength="500" name="Description"  placeholder="Description"  data-bind="value:Description,decorateErrorElement:Description"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="email" class="col-md-5 control-label">Pick Up Date</label>
+                                                <div class="col-md-7">
+                                                    <!--<input type="text" class="form-control" name="email" placeholder="Job Date">-->
+                                                    <div class="input-group date">
+                                                      
+														 <input type="text" class="form-control datepicker zeroIndex" name="strJobStartDate"  placeholder="Pick Up Date" data-bind="datepicker:JobStartDate,datepickerOptions:{autoclose: true,startDate: new Date()},decorateErrorElement:JobStartDate" class="form-control" />
+														<span class="input-group-btn datefocus">
+															<button tabindex="-1" type="button" class="btn default">
+																<i class="fa fa-calendar"></i>
+															</button>
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+										 <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="email" class="col-md-5 control-label">Delivery Date</label>
+                                                <div class="col-md-7">
+                                                    <!--<input type="text" class="form-control" name="email" placeholder="Job Date">-->
+                                                    <div class="input-group date">
+                                                     
+
+														 <input type="text" class="form-control datepicker zeroIndex" name="strJobEndDate"  placeholder="Delivery Date" data-bind="datepicker:JobEndDate,datepickerOptions:{autoclose: true,startDate: new Date()},decorateErrorElement:JobEndDate" class="form-control" />
+														<span class="input-group-btn datefocus">
+															<button tabindex="-1" type="button" class="btn default">
+																<i class="fa fa-calendar"></i>
+															</button>
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+										<!--
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label col-md-5">Miles</label>
+                                                <div class="col-md-7">
+                                                   
+                                                    <select data-bind="options: $root.Miles, optionsValue: 'MileID', optionsText: 'Miles',value: MileID,optionsCaption:'Select',decorateErrorElement:MileID" name="MileID" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                        </div>-->
+										
+										<!--
+										<div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label col-md-5">Preferred Transportation</label>
+                                                <div class="col-md-7">
+                                                    
+													<select data-bind="options: $root.TransportationModes, optionsValue: 'TransportationTypeID', optionsText: 'TransportationType',value: TransportationTypeID,optionsCaption:'Select',decorateErrorElement:TransportationTypeID" name="TransportationTypeID" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                        </div>-->
+
+                                    </div>
+
+                                    <div class="col-md-6 no-padding">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label col-md-5">Pick Up Time From</label>
+                                                <div class="col-md-7">
+                                                    <div class="input-group">
+                                                         <input type="text" class="form-control timepicker timepicker-no-seconds zeroIndex"  data-bind = "timePicker:PickUpFromTime ,timePickerOptions:{autoclose: true,defaultTime:false,minuteStep: 15,showSeconds: false,showMeridian: true},decorateErrorElement:PickUpFromTime" name="PickUpFromTime" >
+														<span class="input-group-btn timefocus">
+															<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label col-md-5">Pick Up Time To</label>
+                                                <div class="col-md-7">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control timepicker timepicker-no-seconds zeroIndex"  data-bind = "timePicker:PickUpToTime ,timePickerOptions:{autoclose: true,defaultTime:false,minuteStep: 15,showSeconds: false,showMeridian: true},decorateErrorElement:PickUpToTime" name="PickUpToTime">
+														<span class="input-group-btn timefocus">
+															<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label col-md-5">Delivery Time From</label>
+                                                <div class="col-md-7">
+                                                    <div class="input-group">
+                                                       <input type="text" class="form-control timepicker timepicker-no-seconds zeroIndex"  data-bind = "timePicker:DeliveryFromTime ,timePickerOptions:{autoclose: true,defaultTime:false,minuteStep: 15,showSeconds: false,showMeridian: true},decorateErrorElement:DeliveryFromTime" name="DeliveryFromTime">
+														<span class="input-group-btn timefocus">
+															<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label col-md-5">Delivery Time To</label>
+                                                <div class="col-md-7">
+                                                    <div class="input-group">
+                                                          <input type="text" class="form-control timepicker timepicker-no-seconds zeroIndex"  data-bind = "timePicker:DeliveryToTime, timePickerOptions:{autoclose: true,defaultTime:false,minuteStep: 15,showSeconds: false,showMeridian: true},decorateErrorElement:DeliveryToTime" name="DeliveryToTime">
+														<span class="input-group-btn timefocus">
+															<button class="btn default" type="button"><i class="fa fa-clock-o"></i></button>
+														</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+										
+
+                                    </div>
+
+                                        <div class="col-md-12">
+                                            <label class="control-label col-md-4"></label>
+                                            <div class="col-md-12">
+                                                <div class="validationMsg"></div>
+                                            </div>
+                                    </div>
+
+                                </div>
+
+                            
+
+                                <div class="col-md-12 no-padding">
+                                    <div class="col-md-6 no-padding">
+                                        <div class="col-md-12">
+                                            <h4 class="big-heading head-border">Pick Up Address Detail</h4>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Address</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control"  maxlength="100" name="PickUpAddress" placeholder="Address" data-bind="value:PickUpAddress,decorateErrorElement:PickUpAddress"">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                       <!-- <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Phone</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control"  maxlength="20" name="PickUpPhone" placeholder="Phone" data-bind="value:PickUpPhone,decorateErrorElement:PickUpPhone">
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+
+
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">State</label>
+                                                <div class="col-md-8">
+                                                     <select data-bind="options: $root.PickUpStates, optionsValue: 'StateCode', optionsText: 'StateName',value: PickUpStateCode,optionsCaption:'Select',event: { change: $root.PickUpStateSelectionChanged },decorateErrorElement:PickUpStateCode" name="PickUpStateCode" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">City</label>
+                                                <div class="col-md-8">
+                                                    <select data-bind="options: $root.PickUpCities, optionsValue: 'CityCode', optionsText: 'CityName',value: PickUpCityCode, optionsCaption:'Select',decorateErrorElement:PickUpCityCode"  name="PickUpCityCode" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Zip Code</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" maxlength="10"  name="PickUpZip"   placeholder="Zip Code" data-bind="value:PickUpZip,decorateErrorElement:PickUpZip">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 no-padding">
+                                        <div class="col-md-12">
+                                            <h4 class="big-heading head-border">Delivery Address Detail</h4>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Address</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control"  maxlength="100" name="DropAddress" placeholder="Address" data-bind="value:DropAddress,decorateErrorElement:DropAddress">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Phone</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control"  maxlength="20" name="DropPhone" placeholder="Phone" data-bind="value:DropPhone,decorateErrorElement:DropPhone">
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">State</label>
+                                                <div class="col-md-8">
+                                                      <select data-bind="options: $root.DropStates, optionsValue: 'StateCode', optionsText: 'StateName',value: DropStateCode,optionsCaption:'Select',event: { change: $root.DropStateSelectionChanged },decorateErrorElement:DropStateCode" name="DropStateCode" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">City</label>
+                                                <div class="col-md-8">
+                                                     <select data-bind="options: $root.DropCities, optionsValue: 'CityCode', optionsText: 'CityName',value: DropCityCode, optionsCaption:'Select',decorateErrorElement:DropCityCode" name="DropCityCode" class="form-control"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="icode" class="col-md-4 control-label">Zip Code</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control"  maxlength="10" name="DropZip" placeholder="Zip Code" data-bind="value:DropZip,decorateErrorElement:DropZip">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                  <div class="col-md-12 no-padding">
+                                    <div class="col-md-12">
+                                        <h4 class="big-heading head-border">Frequency Details</h4>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12" style="display: block;">
+                                            <label class="control-label col-md-4">Select Frequency</label>
+                                            <div class="col-md-8">
+                                                <select multiple="multiple" id="frequencyMS" style="display: none;" 
+                                                     data-bind="options: $root.Frequencies, optionsValue: 'FrequencyID', optionsText: 'Frequency',multipleSelect:JobFrequency,multipleSelectOptions:{'width': '100%','filter': false,'position':'top',placeholder:'Select Frequency','single':true,onOpen:$root.OnFrequencyOpen,onClose:$root.OnFrequencyClose.bind(JobFrequency,'operationdayMS')},decorateErrorElement:JobFrequency" name="JobFrequency">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                     <div class="form-group" data-bind="visible:$root.OneTimeFrequency()!=JobFrequency()[0]">
+                                        <div class="col-md-12" style="display: block;">
+                                            <label class="control-label col-md-4">Select OpeartionDays</label>
+                                            <div class="col-md-8">
+                                                <select multiple="multiple" id="ms2" style="display: none;" 
+                                                    data-bind="options: $root.OperationDays, optionsValue: 'OperationDayID', optionsText: 'OperationDay',multipleSelect:JobOperationDays,multipleSelectOptions:{'width': '100%','filter': true,placeholder:'Select Operation Days'},decorateErrorElement:JobOperationDays" name="JobOperationDays">
+                                                       
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+
+
+
+
+
+                                <div class="col-md-12 no-padding">
+                                    <div class="col-md-12">
+                                        <h4 class="big-heading head-border">Service</h4>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12" style="display: block;">
+                                            <label class="control-label col-md-4">Select Service</label>
+                                            <div class="col-md-8">
+                                                <select multiple="multiple" id="serivicesMS" style="display: none;" 
+                                                     data-bind="options: $root.Services, optionsValue: 'ServiceID', optionsText: 'ServiceName',multipleSelect:JobService,multipleSelectOptions:{'width': '100%','filter': true,'position':'top',placeholder:'Select Service','single':true,onOpen:$root.OnServiceOpen,onClose:$root.OnServiceClose.bind(JobService,'categoriesMS','subcategoriesMS')},decorateErrorElement:JobService" name="JobService">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="col-md-12 no-padding">
+                                    <div class="col-md-12">
+                                        <h4 class="big-heading head-border">Category</h4>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12" style="display: block;">
+                                            <label class="control-label col-md-4">Select Category</label>
+                                            <div class="col-md-8">
+                                                <select multiple="multiple" id="categoriesMS" style="display: none;" 
+								data-bind="options: $root.Categories, optionsValue: 'CategoryID', optionsText: 'CategoryName',multipleSelect:JobCategories,multipleSelectOptions:{'width': '100%','filter': true,'position':'top',placeholder:'Select Categories',onOpen:$root.OnCategoryOpen,onClose:$root.OnCategoryClose.bind(JobCategories,'subcategoriesMS')},decorateErrorElement:JobCategories" name="JobCategories">
+								</select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+								<div class="col-md-12 no-padding">
+                                    <div class="col-md-12">
+                                        <h4 class="big-heading head-border">Sub Category</h4>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12" style="display: block;">
+                                            <label class="control-label col-md-4">Select Sub Category</label>
+                                            <div class="col-md-8">
+
+                                                <select multiple="multiple" id="subcategoriesMS" style="display: none;" data-bind="customMultipleSelect:JobSubCategories,decorateErrorElement:JobSubCategories" name="JobSubCategories"> 
+                                    <!-- ko foreach: $root.Categories -->
+                                    <!-- ko if: $root.SubCategories().length>0 -->
+                                        
+                                            <!-- ko foreach: $root.SubCategories -->
+                                                <!-- ko if: $parent.CategoryID()==$data.CategoryID() -->
+                                                     <option  data-bind="value:$data.SubCategoryID,text:$data.SubCategoryName"></option>
+                                                <!-- /ko -->     
+                                            <!-- /ko -->        
+                                         <!-- /ko -->        
+                                    <!-- /ko -->
+                                                                    
+                                 </select>
+<!--                                                <select multiple="multiple" id="subcategoriesMS" style="display: none;" 
+								data-bind="options: $root.SubCategories, optionsValue: 'SubCategoryID', optionsText: 'SubCategoryName',multipleSelect:JobSubCategories,multipleSelectOptions:{'width': '100%','filter': true,'position':'top',placeholder:'Select Sub Categories'},decorateErrorElement:JobSubCategories" name="JobSubCategories">
+								</select>  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                    <div class="col-md-12 no-padding" data-bind="visible:$root.CategoryItemArray().length>0 &&  $root.SubCategories().length>0">
+                                    <div class="col-md-12">
+                                        <h4 class="big-heading head-border">Item Details</h4>
+                                    </div>
+
+                                    <div class="col-md-12" data-bind="visible:$root.CategoryItemArray().length>0,foreach:$root.CategoryItemArray">
+                                                    <div class="subTitle" style="font-size: 14px;" data-bind="visible:$data.SubCategories().length>0,text:$data.Category">
+                                                    </div>
+                                                    <div data-bind="foreach:$data.SubCategories" data-bind="visible:$root.CategoryItemArray().length>0">
+                                                        <div class="col-md-12" >
+                                                            <h5 data-bind="text:$data.SubCategoryName()"></h5>
+                                                                <div class="col-md-2 form-sub-group">
+                                                                    <input type="text"  maxlength="10" class="form-control"  placeholder="Quantity" data-bind="value:$data.Quantity,decorateErrorElement:$data.Quantity" >
+                                                                </div>
+                                                                
+                                                                <div class="col-md-2 form-sub-group">
+                                                                    <input type="text" class="form-control" maxlength="10"   placeholder="Price" data-bind="value:$data.Price,decorateErrorElement:$data.Price">
+                                                                </div> 
+
+<!--
+                                                                <div class="col-md-2 form-sub-group">
+                                                                    <input type="text" class="form-control" maxlength="10"   placeholder="Weight" data-bind="value:$data.Weight,decorateErrorElement:$data.Weight">
+                                                                </div>  -->
+
+                                                                 <div class="col-md-3 form-sub-group">
+                                                                  <select
+                                data-bind="options: $root.Itemconditions, optionsValue: 'ItemConditionID', optionsText: 'ItemCondition',value: ItemConditionID, optionsCaption:'Select',decorateErrorElement:$data.ItemConditionID" class="form-control">
+                                </select>
+
+
+                                                                    
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                <a data-bind="click:$root.MakeSubItemCopy.bind($parent,$index())"> <span class="glyphicon glyphicon-plus"> </span> </a>
+
+                                                                <a data-bind="click:$root.RemoveSubItem.bind($parent,$index())"> <span class="glyphicon glyphicon-trash"> </span> </a>
+                                                                </div>
+
+                                                            
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+
+
+
+
+
+                                <div class="col-md-12 media">
+                                    <button type="button" class="btn btn-info" data-bind="click:$root.Save">Submit</button>
+                                </div>
+                                <div class="col-md-6"></div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div>
+		</div>
+		</div>
+		</div>
+
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/assets/js/pagejs/order/addorder.js');?>"></script>
+
+
+<script type="text/javascript">
+	
+	 //window.Required_JobName ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Job Name')); ?>";
+	 window.Required_Description ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Description')); ?>";
+	 window.Required_TransportationMode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Transportation Mode')); ?>";
+	 window.Required_JobStartDate ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Pick Up Date')); ?>";
+	 window.Required_JobEndDate ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Delivery Date')); ?>";
+	 window.Required_PickUpFromTime ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Pick Up From Time')); ?>";
+	 window.Required_PickUpToTime ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Pick Up To Time')); ?>";
+	 window.Required_DeliveryFromTime ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Delivery From Time')); ?>";
+	 window.Required_DeliveryToTime ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Delivery To Time')); ?>";
+	 window.Required_PickUpAddress ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Address')); ?>";
+	 window.Required_PickUpCityCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'City')); ?>";
+	 window.Required_PickUpStateCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'State')); ?>";
+	 window.Required_PickUpZip ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Zip Code')); ?>";
+	 window.Required_PickUpPhone ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Phone')); ?>";
+	 window.Required_FirstName ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'FirstName')); ?>";
+	 window.Required_DropAddress ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Address')); ?>";
+	 window.Required_DropCityCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'City')); ?>";
+	 window.Required_DropStateCode ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'State')); ?>";
+	 window.Required_DropZip ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Zip Code')); ?>";
+	 window.Required_DropPhone ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Phone')); ?>";
+	 window.Required_Mile ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Mile')); ?>";
+	 window.Required_JobCategories ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Job Category')); ?>";
+	 window.Required_JobSubCategories ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Job Sub Category')); ?>";
+	 window.DeliveryTimingGreaterThanPickupTiming ="<?php echo trans('messages.DeliveryTimingGreaterThanPickupTiming'); ?>";
+	 window.AtleastOneSubCategoryRequired ="<?php echo trans('messages.AtleastOneSubCategoryRequired'); ?>";
+	 window.RemoveItemMessage ="<?php echo trans('messages.RemoveItemMessage'); ?>";
+     window.Required_JobOperationDays ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Job Opeartion Days')); ?>";
+     
+
+	
+  </script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

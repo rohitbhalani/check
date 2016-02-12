@@ -1,0 +1,739 @@
+[2015-10-09 11:04:33] production.INFO: Time Of Error:Fri,9 Oct 11:04:33 IST [] []
+[2015-10-09 11:04:33] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:216
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 11:04:34] production.INFO: Time Of Error:Fri,9 Oct 11:04:34 IST [] []
+[2015-10-09 11:04:34] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 11:04:54] production.INFO: Time Of Error:Fri,9 Oct 11:04:54 IST [] []
+[2015-10-09 11:04:54] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:216
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 11:04:55] production.INFO: Time Of Error:Fri,9 Oct 11:04:55 IST [] []
+[2015-10-09 11:04:55] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php:5702
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5019): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(5007): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(4999): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(722): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(703): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(7763): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8370): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(8317): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(10955): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\bootstrap\compiled.php(664): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:05:16] production.INFO: Time Of Error:Fri,9 Oct 12:05:16 IST [] []
+[2015-10-09 12:05:16] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:216
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:05:17] production.INFO: Time Of Error:Fri,9 Oct 12:05:17 IST [] []
+[2015-10-09 12:05:17] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:05:37] production.INFO: Time Of Error:Fri,9 Oct 12:05:37 IST [] []
+[2015-10-09 12:05:37] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:216
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:05:39] production.INFO: Time Of Error:Fri,9 Oct 12:05:39 IST [] []
+[2015-10-09 12:05:39] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:08:30] production.INFO: Time Of Error:Fri,9 Oct 12:08:30 IST [] []
+[2015-10-09 12:08:30] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:216
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:08:31] production.INFO: Time Of Error:Fri,9 Oct 12:08:31 IST [] []
+[2015-10-09 12:08:31] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:10:44] production.INFO: Time Of Error:Fri,9 Oct 12:10:44 IST [] []
+[2015-10-09 12:10:44] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:216
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:10:46] production.INFO: Time Of Error:Fri,9 Oct 12:10:46 IST [] []
+[2015-10-09 12:10:46] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:13:51] production.INFO: Time Of Error:Fri,9 Oct 12:13:51 IST [] []
+[2015-10-09 12:13:51] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:216
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:13:53] production.INFO: Time Of Error:Fri,9 Oct 12:13:53 IST [] []
+[2015-10-09 12:13:53] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:17:22] production.INFO: Time Of Error:Fri,9 Oct 12:17:22 IST [] []
+[2015-10-09 12:17:22] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:217
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:17:24] production.INFO: Time Of Error:Fri,9 Oct 12:17:24 IST [] []
+[2015-10-09 12:17:24] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:17:48] production.INFO: Time Of Error:Fri,9 Oct 12:17:48 IST [] []
+[2015-10-09 12:17:48] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:217
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:17:49] production.INFO: Time Of Error:Fri,9 Oct 12:17:49 IST [] []
+[2015-10-09 12:17:49] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:18:28] production.INFO: Time Of Error:Fri,9 Oct 12:18:28 IST [] []
+[2015-10-09 12:18:28] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:217
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:18:30] production.INFO: Time Of Error:Fri,9 Oct 12:18:30 IST [] []
+[2015-10-09 12:18:30] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:22:38] production.INFO: Time Of Error:Fri,9 Oct 12:22:38 IST [] []
+[2015-10-09 12:22:38] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Intervention\Image' not found' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:218
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:22:39] production.INFO: Time Of Error:Fri,9 Oct 12:22:39 IST [] []
+[2015-10-09 12:22:39] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:23:04] production.INFO: Time Of Error:Fri,9 Oct 12:23:04 IST [] []
+[2015-10-09 12:23:04] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getRealPath() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:218
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:23:05] production.INFO: Time Of Error:Fri,9 Oct 12:23:05 IST [] []
+[2015-10-09 12:23:05] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:23:45] production.INFO: Time Of Error:Fri,9 Oct 12:23:45 IST [] []
+[2015-10-09 12:23:45] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:218
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:23:46] production.INFO: Time Of Error:Fri,9 Oct 12:23:46 IST [] []
+[2015-10-09 12:23:46] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:26:12] production.INFO: Time Of Error:Fri,9 Oct 12:26:12 IST [] []
+[2015-10-09 12:26:12] production.ERROR: exception 'Intervention\Image\Exception\NotReadableException' with message 'Image source not readable' in C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\AbstractDecoder.php:302
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\AbstractDriver.php(64): Intervention\Image\AbstractDecoder->init('Duckbuild---Sim...')
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\ImageManager.php(50): Intervention\Image\AbstractDriver->init('Duckbuild---Sim...')
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(208): Intervention\Image\ImageManager->make('Duckbuild---Sim...')
+#3 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(219): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(219): Intervention\Image\Facades\Image::make('Duckbuild---Sim...')
+#5 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AnalystController.php(63): DataProviders\AnalystDataProvider->SaveAnalyst(Array, 1)
+#6 [internal function]: AnalystController->postSaveAnalyst()
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('postSaveAnalyst', Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(AnalystController), Object(Illuminate\Routing\Route), 'postSaveAnalyst')
+#10 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AnalystControll...', 'postSaveAnalyst')
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#18 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#19 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#22 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2015-10-09 12:26:13] production.INFO: Time Of Error:Fri,9 Oct 12:26:13 IST [] []
+[2015-10-09 12:26:13] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:26:45] production.INFO: Time Of Error:Fri,9 Oct 12:26:45 IST [] []
+[2015-10-09 12:26:45] production.ERROR: exception 'Intervention\Image\Exception\NotReadableException' with message 'Image source not readable' in C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\AbstractDecoder.php:302
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\AbstractDriver.php(64): Intervention\Image\AbstractDecoder->init('Duckbuild---Sim...')
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\ImageManager.php(50): Intervention\Image\AbstractDriver->init('Duckbuild---Sim...')
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(208): Intervention\Image\ImageManager->make('Duckbuild---Sim...')
+#3 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(219): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(219): Intervention\Image\Facades\Image::make('Duckbuild---Sim...')
+#5 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AnalystController.php(63): DataProviders\AnalystDataProvider->SaveAnalyst(Array, 1)
+#6 [internal function]: AnalystController->postSaveAnalyst()
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('postSaveAnalyst', Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(AnalystController), Object(Illuminate\Routing\Route), 'postSaveAnalyst')
+#10 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AnalystControll...', 'postSaveAnalyst')
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#18 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#19 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#22 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2015-10-09 12:26:46] production.INFO: Time Of Error:Fri,9 Oct 12:26:46 IST [] []
+[2015-10-09 12:26:46] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:29:46] production.INFO: Time Of Error:Fri,9 Oct 12:29:46 IST [] []
+[2015-10-09 12:29:46] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'DataProviders\Input' not found' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:219
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:29:47] production.INFO: Time Of Error:Fri,9 Oct 12:29:47 IST [] []
+[2015-10-09 12:29:47] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:30:22] production.INFO: Time Of Error:Fri,9 Oct 12:30:22 IST [] []
+[2015-10-09 12:30:22] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Symfony\Component\Console\Input' not found' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:220
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:30:23] production.INFO: Time Of Error:Fri,9 Oct 12:30:23 IST [] []
+[2015-10-09 12:30:23] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:31:38] production.INFO: Time Of Error:Fri,9 Oct 12:31:38 IST [] []
+[2015-10-09 12:31:38] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:221
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:31:39] production.INFO: Time Of Error:Fri,9 Oct 12:31:39 IST [] []
+[2015-10-09 12:31:39] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:35:29] production.INFO: Time Of Error:Fri,9 Oct 12:35:29 IST [] []
+[2015-10-09 12:35:29] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'DataProviders\Input' not found' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:219
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:35:30] production.INFO: Time Of Error:Fri,9 Oct 12:35:30 IST [] []
+[2015-10-09 12:35:30] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:36:29] production.INFO: Time Of Error:Fri,9 Oct 12:36:29 IST [] []
+[2015-10-09 12:36:29] production.ERROR: exception 'Symfony\Component\HttpFoundation\File\Exception\FileException' with message 'The file "Duckbuild---Simon Cookes---Malvern-Townhouse-01.jpg" was not uploaded due to an unknown error.' in C:\wamp\www\MarketInsight\trunk\Website\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\UploadedFile.php:251
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(226): Symfony\Component\HttpFoundation\File\UploadedFile->move('C:\\wamp\\www\\Mar...', 'Duckbuild---Sim...')
+#1 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AnalystController.php(63): DataProviders\AnalystDataProvider->SaveAnalyst(Array, 1)
+#2 [internal function]: AnalystController->postSaveAnalyst()
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('postSaveAnalyst', Array)
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(AnalystController), Object(Illuminate\Routing\Route), 'postSaveAnalyst')
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AnalystControll...', 'postSaveAnalyst')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2015-10-09 12:36:30] production.INFO: Time Of Error:Fri,9 Oct 12:36:30 IST [] []
+[2015-10-09 12:36:30] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:37:14] production.INFO: Time Of Error:Fri,9 Oct 12:37:14 IST [] []
+[2015-10-09 12:37:14] production.ERROR: exception 'Symfony\Component\HttpFoundation\File\Exception\FileException' with message 'The file "Duckbuild---Simon Cookes---Malvern-Townhouse-01.jpg" was not uploaded due to an unknown error.' in C:\wamp\www\MarketInsight\trunk\Website\vendor\symfony\http-foundation\Symfony\Component\HttpFoundation\File\UploadedFile.php:251
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(226): Symfony\Component\HttpFoundation\File\UploadedFile->move('C:\\wamp\\www\\Mar...', 'Duckbuild---Sim...')
+#1 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AnalystController.php(63): DataProviders\AnalystDataProvider->SaveAnalyst(Array, 1)
+#2 [internal function]: AnalystController->postSaveAnalyst()
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('postSaveAnalyst', Array)
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(AnalystController), Object(Illuminate\Routing\Route), 'postSaveAnalyst')
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AnalystControll...', 'postSaveAnalyst')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2015-10-09 12:37:15] production.INFO: Time Of Error:Fri,9 Oct 12:37:15 IST [] []
+[2015-10-09 12:37:15] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:38:35] production.INFO: Time Of Error:Fri,9 Oct 12:38:35 IST [] []
+[2015-10-09 12:38:35] production.ERROR: exception 'Intervention\Image\Exception\NotReadableException' with message 'Image source not readable' in C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\AbstractDecoder.php:302
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\AbstractDriver.php(64): Intervention\Image\AbstractDecoder->init('Duckbuild---Sim...')
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\ImageManager.php(50): Intervention\Image\AbstractDriver->init('Duckbuild---Sim...')
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(208): Intervention\Image\ImageManager->make('Duckbuild---Sim...')
+#3 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(223): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(223): Intervention\Image\Facades\Image::make('Duckbuild---Sim...')
+#5 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AnalystController.php(63): DataProviders\AnalystDataProvider->SaveAnalyst(Array, 1)
+#6 [internal function]: AnalystController->postSaveAnalyst()
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('postSaveAnalyst', Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(AnalystController), Object(Illuminate\Routing\Route), 'postSaveAnalyst')
+#10 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AnalystControll...', 'postSaveAnalyst')
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#18 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#19 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#22 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2015-10-09 12:38:36] production.INFO: Time Of Error:Fri,9 Oct 12:38:36 IST [] []
+[2015-10-09 12:38:36] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:39:33] production.INFO: Time Of Error:Fri,9 Oct 12:39:33 IST [] []
+[2015-10-09 12:39:33] production.ERROR: exception 'Intervention\Image\Exception\NotReadableException' with message 'Image source not readable' in C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\AbstractDecoder.php:302
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\AbstractDriver.php(64): Intervention\Image\AbstractDecoder->init('Duckbuild---Sim...')
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\intervention\image\src\Intervention\Image\ImageManager.php(50): Intervention\Image\AbstractDriver->init('Duckbuild---Sim...')
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(208): Intervention\Image\ImageManager->make('Duckbuild---Sim...')
+#3 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(223): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php(223): Intervention\Image\Facades\Image::make('Duckbuild---Sim...')
+#5 C:\wamp\www\MarketInsight\trunk\Website\app\controllers\admin\AnalystController.php(63): DataProviders\AnalystDataProvider->SaveAnalyst(Array, 1)
+#6 [internal function]: AnalystController->postSaveAnalyst()
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('postSaveAnalyst', Array)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(AnalystController), Object(Illuminate\Routing\Route), 'postSaveAnalyst')
+#10 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'AnalystControll...', 'postSaveAnalyst')
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#18 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#19 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#20 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#21 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#22 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []
+[2015-10-09 12:39:34] production.INFO: Time Of Error:Fri,9 Oct 12:39:34 IST [] []
+[2015-10-09 12:39:34] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:40:51] production.INFO: Time Of Error:Fri,9 Oct 12:40:51 IST [] []
+[2015-10-09 12:40:51] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Undefined class constant 'file'' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:220
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:40:52] production.INFO: Time Of Error:Fri,9 Oct 12:40:52 IST [] []
+[2015-10-09 12:40:52] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:41:40] production.INFO: Time Of Error:Fri,9 Oct 12:41:40 IST [] []
+[2015-10-09 12:41:40] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:226
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:41:42] production.INFO: Time Of Error:Fri,9 Oct 12:41:42 IST [] []
+[2015-10-09 12:41:42] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:42:42] production.INFO: Time Of Error:Fri,9 Oct 12:42:42 IST [] []
+[2015-10-09 12:42:42] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Undefined class constant 'file'' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:220
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:42:44] production.INFO: Time Of Error:Fri,9 Oct 12:42:44 IST [] []
+[2015-10-09 12:42:44] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:46:06] production.INFO: Time Of Error:Fri,9 Oct 12:46:06 IST [] []
+[2015-10-09 12:46:06] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:47:30] production.INFO: Time Of Error:Fri,9 Oct 12:47:30 IST [] []
+[2015-10-09 12:47:30] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:48:07] production.INFO: Time Of Error:Fri,9 Oct 12:48:07 IST [] []
+[2015-10-09 12:48:07] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:50:37] production.INFO: Time Of Error:Fri,9 Oct 12:50:37 IST [] []
+[2015-10-09 12:50:37] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function resize() on a non-object' in C:\wamp\www\MarketInsight\trunk\Website\app\DataProviders\admin\AnalystDataProvider.php:221
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2015-10-09 12:50:37] production.INFO: Time Of Error:Fri,9 Oct 12:50:37 IST [] []
+[2015-10-09 12:50:37] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:51:13] production.INFO: Time Of Error:Fri,9 Oct 12:51:13 IST [] []
+[2015-10-09 12:51:13] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2015-10-09 12:55:14] production.INFO: Time Of Error:Fri,9 Oct 12:55:14 IST [] []
+[2015-10-09 12:55:14] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\RouteCollection.php:148
+Stack trace:
+#0 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1049): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1017): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\wamp\www\MarketInsight\trunk\Website\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\wamp\www\MarketInsight\trunk\Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\MarketInsight\trunk\Website\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []

@@ -1,0 +1,102 @@
+<?php $__env->startSection('Title', 'Raise Dispute'); ?>
+
+<?php $__env->startSection('content'); ?>
+ 
+  <?php echo Form::hidden('JobModel', json_encode($RaiseDisputeModel),$attributes = array('id'=>'RaiseDisputeModel')); ?>
+
+
+
+ <div class="container">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="subTitle">Raise Dispute</div>
+                <!--<span class="pull-right status-title"> In Transit </span>-->
+            </div>
+
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <form class="form-horizontal" id="raisedisputeform"  data-bind="with:RaiseDisputeModel">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Select </label>
+                                <div class="col-md-9">
+                                     <select data-bind="options: $root.NatureOfComplaints, optionsValue: 'NatureOfComplaintID', optionsText: 'NatureOfComplaint',value: NatureOfComplaintID,optionsCaption:'Select',decorateErrorElement:NatureOfComplaintID" name="NatureOfComplaintID" class="form-control"></select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Description </label>
+                                <div class="col-md-9">
+									  <textarea type="text" class="form-control" maxlength="10" name="Description" placeholder="Description" data-bind="value:Description,decorateErrorElement:Description"></textarea>
+                                </div>
+                            </div>
+
+                           
+
+							 <input  type="file" multiple='allow' name="files" title="Upload file"  class="dz-upload btn btn-info floatLeft"  data-bind="ApplyFileUpload:$root.UploadFileUrl,paraMeter:$data.JobID(),
+                                            onSuccessCallback:$root.FileUploadCompletedCallback,onErrorCallback:$root.FileUploadErrorCallback,acceptedFiles:''" tabindex="110" />
+
+						<div class="fileInfo" data-bind="visible:$data.FileDetails().length>0, foreach:$data.FileDetails">
+								 <div class="row-block">
+                                              <span data-bind="visible:FileGuidName()">File Name: </span>
+                                                <a  tabindex = "111" target="_blank" data-bind=""><span data-bind="text:FileName"></span></a>
+                                                <a  href="javascript:void(0)" tabindex = "112" class="pointer removefile" data-bind="visible:FileGuidName(),click:$root.RemoveUploadedFileCallback">
+                                                    <i class="text text-danger font-small glyphicon glyphicon-minus-sign"></i>Remove File
+                                                </a>
+                                              <span class="right error-color uploadMessage" data-bind="visible:!FileGuidName()">*Please upload a file</span>
+                                            </div>
+						</div>
+
+						
+                
+
+
+
+                             <hr/>
+
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-3">
+                                  <button id="btn-signup" type="button" class="btn btn-info" data-bind="click:$root.SaveRaiseDispute">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('script'); ?>
+
+<script src="<?php echo asset('/assets/js/pagejs/order/raisedispute.js');?>"></script>
+<script type="text/javascript">
+	window.Required_NatureOfComplaint ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Nature Of Complaint')); ?>";
+	window.Required_Description ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Description')); ?>";
+	//window.Required_FileDetails ="<?php echo trans('messages.PropertyRequired',array('attribute'=>'FileDetails')); ?>";
+</script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

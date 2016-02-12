@@ -1,0 +1,37 @@
+<?php $__env->startSection('title', 'Login'); ?>
+<?php $__env->startSection('script'); ?>
+<script src="<?php echo asset('/Assets/js/pagejs/User/Login.js');?>"></script>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<form data-bind="with:$data.Usersobj()" id="frmUsers" method="POST" class="validate-inline">
+		<h3 class="form-title">Login To Your Account</h3>
+	    <div class="form-group">
+	        <label class="control-label visible-ie8 visible-ie9">Email</label>
+	        <div class="input-icon">
+	            <i class="fa fa-envelope"></i>
+	            <?php echo Form::text("Email", $value = null, $attributes = array('data-bind'=>'value:$data.Email', 'class'=>'form-control placeholder-no-fix', 'placeholder'=>'Email')); ?>
+	            <?php echo $errors->first('Email'); ?>
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <label class="control-label visible-ie8 visible-ie9">Password</label>
+	        <div class="input-icon">
+	            <i class="fa fa-lock"></i>
+	            <input type="password" name="Password" data-bind ="value:$data.Password" class ="form-control placeholder-no-fix" placeholder="Password"/>
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <button data-bind="click:$parent.AuthenticateUser" class="btn green pull-right" id="loginButton">
+	            Login <i class="m-icon-swapright m-icon-white"></i>
+	        </button>
+	    </div>
+	    <div class="forget-password">
+	        <h4>Don't have an account yet?</h4>
+	        <p>
+	            no worries, <a href="<?php echo URL::to('/').'/security/signup'; ?>" id="register-btn">Create an account</a>
+	        </p>
+	    </div>
+	</form>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

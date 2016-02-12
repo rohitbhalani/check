@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+<!-- BEGIN HEAD -->
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <title>Laravel - <?php echo $__env->yieldContent('title'); ?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <script>window.baseUrl = "<?php echo e(isset($BaseUrl) ? $BaseUrl : 'Default'); ?>";</script>
+
+    <link href="<?php echo asset('/Assets/css/font-awesome.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/simple-line-icons/simple-line-icons.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/bootstrap.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/bootstrap-dialog.css');?>" rel="stylesheet">
+	<!--<link href="<?php echo asset('/Assets/css/bootstrap-theme.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/uniform/css/uniform.default.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/bootstrap-switch/css/bootstrap-switch.css');?>">-->
+	<link href="<?php echo asset('/Assets/css/toaster/toaster.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/select2/select2.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/login.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/custom.css');?>" rel="stylesheet">
+	<!--<link href="<?php echo asset('/Assets/css/components.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/default.css');?>" rel="stylesheet">
+	<link href="<?php echo asset('/Assets/css/plugins.css');?>" rel="stylesheet">-->
+	<link href="<?php echo asset('/Assets/css/social_networking_buttons.css');?>" rel="stylesheet">
+    <link href="<?php echo asset('/Assets/css/bootstrap-dialog.css');?>" rel="stylesheet">
+    <link href="<?php echo asset('/Assets/css/layout.css');?>" rel="stylesheet">
+    <script src="<?php echo asset('/Assets/js/jquery-1.11.1.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/PageLibraries/jquery.history.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/PageLibraries/knockout-2.1.0.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/PageLibraries/knockout.mapping.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/PageLibraries/knockout.validation.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/toaster/toaster.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/pagejs/Common.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/bootstrap.js');?>"></script>
+	<script src="<?php echo asset('/Assets/js/BootstrapDialogJs/bootstrap-dialog.js');?>"></script>
+	<?php echo $__env->yieldContent('script'); ?>
+	
+    <!-- END THEME STYLES -->
+    <link rel="icon" type="img/ico" href="/favicon.ico">
+	</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="<?php echo URL::to('/'); ?>">Laravel</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                	<li><a title="Create User" href="<?php echo URL::to('/').'/users/create'; ?>">Create User</a></li>
+                    <li><a title="User List" href="<?php echo URL::to('/').'/users/userslist'; ?>">User List</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:void(0)">Hi, <?php echo ucfirst(Auth::user()->FirstName).' '. ucfirst(Auth::user()->LastName); ?></a></li>
+                    <li><a title="User List" href="<?php echo URL::to('/').'/security/logout'; ?>">Log Out</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<?php echo $__env->yieldContent('content'); ?>
+</body>
+</html>

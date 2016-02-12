@@ -1,0 +1,63 @@
+<?php
+use Infrastructure\Common;
+use Infrastructure\Constants;
+use \Lang;
+use \Message;
+?>
+
+<?php $__env->startSection('Title'); ?>
+    <?php isset($ScriptModel['ScriptDetails']->ScriptID) ? print 'Edit Script' : print 'Add Script' ; ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+    <main id="main" role="main" style="display: none;">
+        <?php echo Form::hidden('$ScriptModel', json_encode($ScriptModel),$attributes = array('id'=>'ScriptModel'));?>
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="panel">
+                    <form id="data" class="form-horizontal" role="form" method="POST" data-bind="with:$root.ScriptDetailsModel">
+                        <header class="panel-heading">
+                            <ul class="breadcrumb breadcrumb-subpages">
+                                <li><a href="<?php echo URL::to('/scriptlist'); ?>"><i class="fa fa-users">&nbsp;</i>Script List</a></li>
+                                <li class="active" data-bind="text:ScriptID()?'Edit Script':'Add Script'"></li>
+                            </ul>
+                        </header>
+                        <div class="panel-body">
+                        	<div class="form-group input-col">
+								<label for="sel1" class="col-sm-2 control-label col-lg-2">Select Segment</label>
+								<div class="col-lg-4">
+								<select data-bind="options: $root.SegmentList, optionsValue: 'SegmentID', optionsText: 'SegmentName',value: SegmentID, optionsCaption:'Select Segment',decorateErrorElement:SegmentID"  name="SegmentID" class="form-control signup-select"></select>
+								</div>
+						    </div>
+                            <div class="form-group input-col">
+                                <label class="col-sm-2 control-label col-lg-2" for="script">Script</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" id="Script" maxlength="50" name="Script" data-bind="value:Script,decorateErrorElement:Script" placeholder="Script">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-success" data-bind="click:$root.Save">Save</button>
+                                    <button type="button" class="btn btn-default" data-bind="click:$root.cancel">Cancel</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div><!--row1-->
+    </main>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+    <script src="<?php echo asset('/assets/js/pagejs/admin/addscript.js');?>"></script>
+    <script type="text/javascript">
+        window.Required_Script="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Script')); ?>";
+        window.Required_Segment="<?php echo trans('messages.PropertyRequired',array('attribute'=>'Segment name')); ?>";
+        $('#addscript').addClass('active');
+        $('#script').addClass('active');
+    </script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.sitemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
